@@ -1,0 +1,7 @@
+This project has been done with the help of 'Clever Programmer' [1], and their video [2] from the Youtube.
+
+I give full credit to them in regards to the code which I simpled typed by following the tutorial. 
+
+Links: 
+[1] https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ
+[2] https://www.youtube.com/watch?v=Oo4ziTddOxs
