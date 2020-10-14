@@ -19,13 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Challenge Week Presentation.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Challenge Week Presentation.pptx" afterDir="false" />
+    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Challenge Week Presentation &amp; Tutorial project start">
+      <change afterPath="$PROJECT_DIR$/socialape-functions/dbschema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -58,8 +69,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602671917172</updated>
-      <workItem from="1602671918268" duration="2012000" />
+      <workItem from="1602671918268" duration="10251000" />
     </task>
+    <task id="LOCAL-00001" summary="Challenge Week Presentation &amp; Tutorial project start">
+      <created>1602674019389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602674019389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +94,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Challenge Week Presentation &amp; Tutorial project start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Challenge Week Presentation &amp; Tutorial project start" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1602674049098">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1602674049098" />
+    <state x="697" y="188" key="search.everywhere.popup" timestamp="1602675279247">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="697" y="188" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1602675279247" />
   </component>
 </project>
