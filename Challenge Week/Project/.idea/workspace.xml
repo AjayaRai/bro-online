@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '1:48:47'">
+    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '1:55:55'">
+      <change afterPath="$PROJECT_DIR$/socialape-functions/functions/util/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialape-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +65,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -126,14 +128,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Social media tutorial; Time on Youtube '1:48:47'" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="374" y="84" key="SettingsEditor" timestamp="1602875685630">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="374" y="84" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1602875685630" />
     <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1602779046062">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1602779046062" />
-    <state x="697" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1602777951370">
+    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1602869454965">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="697" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1602777951370" />
+    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1602869454965" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -142,6 +148,18 @@
           <url>file://$PROJECT_DIR$/socialape-functions/functions/index.js</url>
           <line>11</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
+          <line>117</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
+          <line>97</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
