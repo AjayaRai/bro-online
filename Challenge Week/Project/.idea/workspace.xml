@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '1:48:47'" />
+    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '1:48:47'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="Testing_Ground_1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1iri45fVezh5vC7FCKHevYhOLgj" />
@@ -130,7 +141,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/index.js</url>
           <line>11</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
