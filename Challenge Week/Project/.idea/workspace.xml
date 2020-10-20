@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '2:44:58'">
+    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '3:33:02'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialape-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <updated>1602671917172</updated>
       <workItem from="1602671918268" duration="24662000" />
       <workItem from="1602875703035" duration="3145000" />
-      <workItem from="1602940163081" duration="7089000" />
+      <workItem from="1602940163081" duration="14516000" />
     </task>
     <task id="LOCAL-00001" summary="Challenge Week Presentation &amp; Tutorial project start">
       <created>1602674019389</created>
@@ -111,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602876026529</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Social media tutorial; Time on Youtube '3:33:02'">
+      <created>1602965249915</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602965249915</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,38 +141,38 @@
     <MESSAGE value="Social media tutorial; Time on Youtube '51:11'" />
     <MESSAGE value="Social media tutorial; Time on Youtube '1:48:47'" />
     <MESSAGE value="Social media tutorial; Time on Youtube '2:44:58'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Social media tutorial; Time on Youtube '2:44:58'" />
+    <MESSAGE value="Social media tutorial; Time on Youtube '3:33:02'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Social media tutorial; Time on Youtube '3:33:02'" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog" timestamp="1602961998589">
+    <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog" timestamp="1603182179827">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1602961998589" />
+    <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1603182179827" />
     <state x="374" y="84" key="SettingsEditor" timestamp="1602875685630">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="374" y="84" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1602875685630" />
-    <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1602876033868">
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1602965259725">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1602876033868" />
-    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1602869454965">
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1602965259725" />
+    <state x="736" y="171" width="579" height="534" key="find.popup" timestamp="1603180085356">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1602869454965" />
+    <state x="736" y="171" width="579" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1603180085356" />
+    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1603182211035">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1603182211035" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
-          <line>117</line>
+          <line>178</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
-          <line>97</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js</url>
@@ -184,28 +191,40 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/socialape-functions/functions/index.js</url>
-          <line>21</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
-          <line>174</line>
+          <line>177</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
-          <line>102</line>
+          <line>105</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
-          <line>92</line>
+          <line>95</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-functions/functions/util/validators.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-functions/functions/util/validators.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
+          <line>135</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
