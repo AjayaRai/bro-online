@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,11 +22,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '3:33:02'">
+    <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; Time on Youtube '4:00:00'">
+      <change afterPath="$PROJECT_DIR$/socialape-client/public/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/components/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/components/profile/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/components/scream/Scream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/pages/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/pages/signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/actions/dataActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/actions/userActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/reducers/dataReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/reducers/uiReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/redux/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/util/AuthRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-client/src/util/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-functions/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-functions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-functions/.idea/socialape-functions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-functions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialape-functions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/handlers/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialape-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialape-functions/functions/util/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/functions/util/validators.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="Testing_Ground_1" />
+        <entry key="$PROJECT_DIR$/../.." value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -56,6 +80,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/socialape-functions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,7 +92,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raiaj\Documents\University of Essex CS 10_7_18\Year 3\Gitlab\ce301_rai_ajaya\Challenge Week\Project\socialape-client\src\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raiaj\Documents\University of Essex CS 10_7_18\Year 3\Gitlab\ce301_rai_ajaya\Challenge Week\Project\socialape-client\public" />
+      <recent name="C:\Users\raiaj\Documents\University of Essex CS 10_7_18\Year 3\Gitlab\ce301_rai_ajaya\Challenge Week\Project\socialape-client\src" />
       <recent name="C:\Users\raiaj\Documents\University of Essex CS 10_7_18\Year 3\Gitlab\ce301_rai_ajaya\Challenge Week\Project\socialape-functions\functions\Util" />
     </key>
   </component>
@@ -81,7 +111,8 @@
       <updated>1602671917172</updated>
       <workItem from="1602671918268" duration="24662000" />
       <workItem from="1602875703035" duration="3145000" />
-      <workItem from="1602940163081" duration="14516000" />
+      <workItem from="1602940163081" duration="20987000" />
+      <workItem from="1603353305613" duration="12561000" />
     </task>
     <task id="LOCAL-00001" summary="Challenge Week Presentation &amp; Tutorial project start">
       <created>1602674019389</created>
@@ -118,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602965249915</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Social media tutorial; Time on Youtube '4:00:00'">
+      <created>1603213603824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603213603824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,29 +180,38 @@
     <MESSAGE value="Social media tutorial; Time on Youtube '1:48:47'" />
     <MESSAGE value="Social media tutorial; Time on Youtube '2:44:58'" />
     <MESSAGE value="Social media tutorial; Time on Youtube '3:33:02'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Social media tutorial; Time on Youtube '3:33:02'" />
+    <MESSAGE value="Social media tutorial; Time on Youtube '4:00:00'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Social media tutorial; Time on Youtube '4:00:00'" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="757" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603217088207">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="757" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1368.872@0.0.1368.872" timestamp="1603217088207" />
     <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog" timestamp="1603182179827">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1603182179827" />
+    <state x="465" y="191" key="FileChooserDialogImpl" timestamp="1603360566966">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1603360566966" />
     <state x="374" y="84" key="SettingsEditor" timestamp="1602875685630">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="374" y="84" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1602875685630" />
-    <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1602965259725">
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2" timestamp="1603213607098">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1602965259725" />
+    <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1603213607098" />
     <state x="736" y="171" width="579" height="534" key="find.popup" timestamp="1603180085356">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="736" y="171" width="579" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1603180085356" />
-    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1603182211035">
+    <state x="696" y="189" width="672" height="678" key="search.everywhere.popup" timestamp="1603452533173">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="696" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1603182211035" />
+    <state x="696" y="189" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1603452533173" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -187,44 +234,67 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/util/fbAuth.js</url>
           <line>5</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
           <line>177</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
           <line>105</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/screams.js</url>
           <line>95</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/util/validators.js</url>
-          <line>9</line>
-          <properties lambdaOrdinal="-1" />
+          <line>46</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/util/validators.js</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
+          <line>43</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/socialape-functions/functions/handlers/users.js</url>
           <line>135</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-client/src/pages/login.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-client/src/redux/actions/userActions.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-client/src/components/profile/Profile.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-client/src/components/profile/Profile.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/socialape-client/src/components/profile/Profile.js</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
