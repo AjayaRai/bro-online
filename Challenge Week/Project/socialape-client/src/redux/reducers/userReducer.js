@@ -42,7 +42,7 @@ export default function(state = initialState, action) {
                 likes: [
                     ...state.likes,
                     {
-                        userHandle: state.credentials.handle,
+                        userHandle: state.credentials.handle, // we put the likes to the REDUX?
                         screamId: action.payload.screamId
                     }
                 ]
@@ -50,6 +50,7 @@ export default function(state = initialState, action) {
         case UNLIKE_SCREAM:
             return {
                 ...state,
+                // *** below code removes the like; but how?
                 likes: state.likes.filter(
                     (like) => like.screamId !== action.payload.screamId
                 )

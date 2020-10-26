@@ -20,31 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451a6922-3d09-43ba-91d4-69e4850876ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../socialape-client/public/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/Scream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/pages/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/pages/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/pages/signup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/actions/dataActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/actions/userActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/dataReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/uiReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/redux/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/util/AuthRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../socialape-client/src/util/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/socialape-functions.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/layout/Notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/profile/EditDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/profile/StaticProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/CommentForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/Comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/DeleteScream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/LikeButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/PostScream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/components/scream/ScreamDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/images/no-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/pages/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/util/MyButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/util/ProfileSkeleton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../socialape-client/src/util/ScreamSkeleton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/util/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/util/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/components/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/pages/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/pages/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/redux/actions/dataActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/redux/actions/dataActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/dataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/dataReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socialape-client/src/util/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/../socialape-client/src/util/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603360568787</updated>
-      <workItem from="1603360569936" duration="889000" />
+      <workItem from="1603360569936" duration="1737000" />
     </task>
     <servers />
   </component>

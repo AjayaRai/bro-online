@@ -23,8 +23,8 @@ import axios from 'axios';
 
 const theme = createMuiTheme(themeObject);
 
-axios.defaults.baseURL =
-    'https://europe-west1-socialape-d081e.cloudfunctions.net/api';
+/*axios.defaults.baseURL =
+    'https://europe-west1-socialape-d081e.cloudfunctions.net/api';*/
 
 const token = localStorage.FBIdToken;
 if (token) {
