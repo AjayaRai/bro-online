@@ -20,15 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/components/Tribe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/dbschema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/dbschema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/components/Group.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/components/Tribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/components/Tribe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Summer preparation/Projects/slack-clone/src/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Summer preparation/Projects/slack-clone/src/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1jaXNTIAgxwj1dSTYf82kaoxp4p" />
@@ -57,7 +59,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bro-online-client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,6 +67,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,17 +102,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604058370449">
+    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604143859945">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604058370449" />
+    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604143859945" />
+    <state x="186" y="81" key="SettingsEditor" timestamp="1604134421922">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="186" y="81" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1604134421922" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/functions/index.js</url>
-          <line>17</line>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -5,8 +5,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // Pages
 import group from "./pages/group";
 
-
-
 function App() {
   return (
     <div className="App">

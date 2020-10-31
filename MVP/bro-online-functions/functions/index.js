@@ -15,28 +15,35 @@ app.get('/group', (req, res) => {
                     creator: docc.data().creator,
                     groupMembers: []
                 })
-                    db.collection("groups")
-                        .doc(docc.id)
-                        .collection('groupMembers')
-                        .get()
-                        .then((data2) => {
-                            data2.forEach((doc2) => {
-                                groups[0].groupMembers.push({
-                                    userName: doc2.data().userName,
+
+                let groupMembersUserName = [];
+                db.collection("groups")
+                    .doc(docc.id)
+                    .collection('groupMembers')
+                    .get()
+                    .then((data2) => {
+                        data2.forEach((doc2) => {
+                            groupMembersUserName.push(doc2.data().userName)
+                        })
+                        //console.log(groupMembersUserName);
+                        db.collection('users')
+                            .where('userName', 'in', groupMembersUserName)
+                            .get()
+                            .then((data) => {
+                                data.forEach((doc4) => {
+                                    groups[0].groupMembers.push({
+                                        name: doc4.data().name
+                                    })
                                 })
+                                return res.json(groups);
                             })
-                            return res.json(groups);
-                        }).catch((err) => {
-                            console.error(err)
-                    })
+                    }).catch((err) => {
+                        console.error(err);
                 })
-
-
-
+            })
         }).catch((err) => {
             console.error(err);
     })
-
 })
 
 exports.api = functions.region('europe-west2').https.onRequest(app);

@@ -5,7 +5,7 @@ class Tribe extends Component {
         const {groups} = this.props;
 
         let groupMembers = groups ? (
-            groups.groupMembers.map(groupMember => <p>{groupMember.userName}</p>)
+            groups.groupMembers.map(groupMember => <p>{groupMember.name}</p>)
         ) : <p>Loading...</p>
         
         return (
