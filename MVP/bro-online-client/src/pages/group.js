@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Tribe from "../components/Tribe";
 
 class Group extends Component {
     // components state
@@ -22,15 +23,9 @@ class Group extends Component {
 
     render() {
 
-        let groupMembers = this.state.groups ? (
-            this.state.groups.groupMembers.map(groupMember => <p>{groupMember.userName}</p>)
-        ) : <p>Loading...</p>
-
         return (
             <div>
-                <h1>{this.state.groups ? this.state.groups.name : ''} Group</h1>
-                <h2>Members</h2>
-                {groupMembers}
+                <Tribe groups={this.state.groups ? this.state.groups : null}/>
             </div>
         );
     }

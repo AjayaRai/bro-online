@@ -18,7 +18,8 @@ function Chat() {
             ))
         }
 
-        db.collection('rooms').doc(roomId)
+        db.collection('rooms')
+            .doc(roomId)
             .collection('messages')
             .orderBy('timestamp', 'asc')
             .onSnapshot(
