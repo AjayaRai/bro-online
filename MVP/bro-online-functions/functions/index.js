@@ -7,7 +7,6 @@ app.get('/group', (req, res) => {
         .get()
         .then((data) => {
             let groups = [];
-
             data.forEach((docc) => {
                 groups.push({
                     id: docc.id,
@@ -25,7 +24,6 @@ app.get('/group', (req, res) => {
                         data2.forEach((doc2) => {
                             groupMembersUserName.push(doc2.data().userName)
                         })
-                        //console.log(groupMembersUserName);
                         db.collection('users')
                             .where('userName', 'in', groupMembersUserName)
                             .get()

@@ -3,29 +3,26 @@ import axios from 'axios';
 import Tribe from "../components/Tribe";
 
 class Group extends Component {
-    // components state
     state = {
-        groups: null,
+        group: null,
     }
-    x;
 
     componentDidMount() {
         axios.get("/group")
             .then((res) => {
                 this.setState({
-                    groups: res.data[0],
+                    group: res.data[0],
                 })
 
             }).catch((err) => {
                 console.error(err);
-        })
+            })
     }
 
     render() {
-
         return (
             <div>
-                <Tribe groups={this.state.groups ? this.state.groups : null}/>
+                <Tribe group={this.state.group ? this.state.group : null}/>
             </div>
         );
     }

@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="451a6922-3d09-43ba-91d4-69e4850876ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/components/Tribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/components/Tribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
