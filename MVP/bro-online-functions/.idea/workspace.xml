@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/components/Tribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/components/Tribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +84,9 @@
       <updated>1604043136154</updated>
       <workItem from="1604043137262" duration="7620000" />
       <workItem from="1604071101126" duration="4966000" />
+      <workItem from="1604306752282" duration="1399000" />
+      <workItem from="1604432609968" duration="16000" />
+      <workItem from="1604746659944" duration="7851000" />
     </task>
     <servers />
   </component>
@@ -101,10 +109,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604143859945">
+    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog" timestamp="1604747696814">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604143859945" />
+    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1604747696814" />
+    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604759673037">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604759673037" />
     <state x="186" y="81" key="SettingsEditor" timestamp="1604134421922">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -115,8 +127,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/functions/index.js</url>
-          <line>5</line>
+          <line>48</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/functions/index.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/functions/index.js</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

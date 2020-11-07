@@ -23,8 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4543ceef-d9eb-4d98-a0ba-838481fe656c" name="Default Changelist" comment="Social media tutorial; FINISHED merge">
+      <change afterPath="$PROJECT_DIR$/../../MVP/bro-online-client/src/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVP/bro-online-client/src/pages/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/socialape-functions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-functions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-functions/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-functions/firebase-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVP/bro-online-functions/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="AngularJS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/socialape-functions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MVP/bro-online-functions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,6 +100,8 @@
       <workItem from="1602875703035" duration="3145000" />
       <workItem from="1602940163081" duration="20987000" />
       <workItem from="1603353305613" duration="29616000" />
+      <workItem from="1604432628557" duration="1319000" />
+      <workItem from="1604746358312" duration="5948000" />
     </task>
     <task id="LOCAL-00001" summary="Challenge Week Presentation &amp; Tutorial project start">
       <created>1602674019389</created>
@@ -180,10 +189,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="778" y="100" width="495" height="677" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1603733588548" />
-    <state x="465" y="191" key="FileChooserDialogImpl" timestamp="1603360566966">
+    <state x="465" y="191" key="FileChooserDialogImpl" timestamp="1604746655759">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1603360566966" />
+    <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604746655759" />
     <state x="374" y="84" key="SettingsEditor" timestamp="1602875685630">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -192,10 +201,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="556" y="172" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1603739694504" />
-    <state x="736" y="171" width="579" height="534" key="find.popup" timestamp="1603733833676">
+    <state x="736" y="171" width="579" height="534" key="find.popup" timestamp="1604757851529">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="736" y="171" width="579" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1603733833676" />
+    <state x="736" y="171" width="579" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1604757851529" />
     <state x="696" y="189" width="672" height="678" key="search.everywhere.popup" timestamp="1603734381643">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

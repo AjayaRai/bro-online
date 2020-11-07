@@ -8,7 +8,8 @@ class Group extends Component {
     }
 
     componentDidMount() {
-        axios.get("/group")
+        axios
+            .get("/group")
             .then((res) => {
                 this.setState({
                     group: res.data[0],
