@@ -88,7 +88,7 @@ app.get('/group', FBAuth, (req, res) => {
 })
 
 // Signup route
-app.post('/signup', (req, res) => {
+/*app.post('/signup', (req, res) => {
     const newUser = {
         email: req.body.email,
         password: req.body.password,
@@ -127,7 +127,7 @@ app.post('/signup', (req, res) => {
             console.error(err);
             return res.status(500).json({error: err.code});
     })
-})
+})*/
 
 app.post('/login', (req,res) => {
     const user = {
@@ -145,5 +145,44 @@ app.post('/login', (req,res) => {
             return res.json({token});
         })
 });
+
+app.get('/interest', FBAuth, (req, res) => {
+    db.collection('interests')
+        .get()
+        .then((data) => {
+            let interests = [];
+
+            data.forEach((doc) => {
+                interests.push({
+                    name: doc.data().name
+                })
+            })
+
+            return res.json(interests);
+        }).catch((err) => {
+            console.error(err);
+        })
+})
+
+app.get('/users', (req,res) => {
+    db.collection('users')
+        .get()
+        .then((data) => {
+            let jpt = {};
+            let users = [];
+
+            data.forEach((doc) => {
+                users.push({
+                    name: doc.data().name,
+                    userName: doc.data().userName,
+                })
+            })
+
+            jpt.credentials = users[0];
+            return res.json(jpt);
+        }).catch((err) => {
+            console.error(err);
+        })
+})
 
 exports.api = functions.region('europe-west2').https.onRequest(app);
