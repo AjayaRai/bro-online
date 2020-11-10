@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import axios from "axios";
+import { connect } from 'react-redux';
+import { loginUser } from '../redux/actions/userActions';
 
 class login extends Component {
     constructor() {
@@ -15,15 +16,7 @@ class login extends Component {
             email: this.state.email,
             password: this.state.password,
         };
-        axios
-            .post('/login', userData)
-            .then((res) => {
-                console.log(res.data);
-                this.props.history.push('/group');
-            })
-            .catch((err) => {
-                console.error(err);
-            });
+        this.props.loginUser(userData, this.props.history);
     }
     handleChange = (event) => {
         this.setState({
@@ -46,4 +39,12 @@ class login extends Component {
     }
 }
 
-export default login;
+const mapStateToProps = (state) => ({
+    user: state.user,
+})
+
+const mapActionsToProps = {
+    loginUser
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(login);

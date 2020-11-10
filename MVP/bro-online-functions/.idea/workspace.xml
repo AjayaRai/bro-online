@@ -20,16 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/dataActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/dataReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bro-online-client/src/util/AuthRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +92,10 @@
       <workItem from="1604071101126" duration="4966000" />
       <workItem from="1604306752282" duration="1399000" />
       <workItem from="1604432609968" duration="16000" />
-      <workItem from="1604746659944" duration="7851000" />
+      <workItem from="1604746659944" duration="7852000" />
+      <workItem from="1604863435538" duration="420000" />
+      <workItem from="1604864020247" duration="988000" />
+      <workItem from="1604948107005" duration="2642000" />
     </task>
     <servers />
   </component>
@@ -113,10 +122,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1604747696814" />
-    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604759673037">
+    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604948135857">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604759673037" />
+    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604948135857" />
     <state x="186" y="81" key="SettingsEditor" timestamp="1604134421922">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -133,13 +142,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/functions/index.js</url>
           <line>16</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/functions/index.js</url>
           <line>38</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

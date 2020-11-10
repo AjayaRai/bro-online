@@ -20,11 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451a6922-3d09-43ba-91d4-69e4850876ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/actions/dataActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/reducers/dataReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/util/AuthRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/components/Tribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/components/Tribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../socialape-client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,6 +75,7 @@
       <workItem from="1603360569936" duration="1738000" />
       <workItem from="1604042737303" duration="4618000" />
       <workItem from="1604134764167" duration="2168000" />
+      <workItem from="1604950408893" duration="2748000" />
     </task>
     <servers />
   </component>
@@ -83,10 +95,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="807" y="194" key="FileChooserDialogImpl" timestamp="1604070576883">
+    <state x="807" y="194" key="FileChooserDialogImpl" timestamp="1604950558478">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="807" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604070576883" />
+    <state x="807" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604950558478" />
     <state x="394" y="168" width="579" height="534" key="find.popup" timestamp="1604138023192">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
