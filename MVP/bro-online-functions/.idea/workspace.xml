@@ -22,10 +22,7 @@
     <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
@@ -89,6 +86,7 @@
       <workItem from="1604863435538" duration="420000" />
       <workItem from="1604864020247" duration="988000" />
       <workItem from="1604948107005" duration="9778000" />
+      <workItem from="1605120744384" duration="2743000" />
     </task>
     <servers />
   </component>
@@ -111,14 +109,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog" timestamp="1604747696814">
+    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog" timestamp="1605121105874">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1604747696814" />
-    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1604948135857">
+    <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1605121105874" />
+    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1605120864290">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604948135857" />
+    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1605120864290" />
     <state x="186" y="81" key="SettingsEditor" timestamp="1604134421922">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

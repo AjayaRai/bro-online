@@ -164,6 +164,22 @@ app.get('/interest', FBAuth, (req, res) => {
         })
 })
 
+app.post('/interest', FBAuth, (req, res) => {
+    const newInterest = {
+        name: req.body.name
+    }
+
+    db
+        .collection('interests')
+        .add(newInterest)
+        .then((doc) => {
+            res.json({message: `document ${doc.id} created successfully`})
+        }).catch((err) => {
+            res.status(500).json({error: `something went wrong`});
+            console.error(err);
+    })
+})
+
 app.get('/users', (req,res) => {
     db.collection('users')
         .get()

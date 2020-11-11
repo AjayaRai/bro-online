@@ -13,7 +13,6 @@ import AuthRoute from './util/AuthRoute';
 // Pages
 import group from "./pages/group";
 import login from "./pages/login";
-import test from "./pages/test";
 import home from "./pages/home";
 import axios from "axios";
 import {SET_AUTHENTICATED} from "./redux/types";
