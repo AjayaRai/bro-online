@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Tribe from "../components/Tribe";
 
+
+// TODO probelm 'replace' of undefined, login with 'user10email.com' to fix it? This user shouldn't be logging in?
 class Group extends Component {
     state = {
         group: null,

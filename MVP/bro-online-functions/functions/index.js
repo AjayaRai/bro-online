@@ -146,17 +146,21 @@ app.post('/login', (req,res) => {
         })
 });
 
-app.get('/interest', FBAuth, (req, res) => {
-    db.collection('interests')
+
+app.post('/get_interest', FBAuth, (req, res) => {
+    const userName = req.body.userName;
+
+    db
+        .collection('users')
+        .doc(userName)
+        .collection('interests')
         .get()
         .then((data) => {
             let interests = [];
 
             data.forEach((doc) => {
-                interests.push({
-                    name: doc.data().name
-                })
-            })
+                interests.push(doc.data());
+            });
 
             return res.json(interests);
         }).catch((err) => {
@@ -164,20 +168,25 @@ app.get('/interest', FBAuth, (req, res) => {
         })
 })
 
-app.post('/interest', FBAuth, (req, res) => {
+app.post('/add_interest', FBAuth, (req, res) => {
+    const userName = req.body.userName;
     const newInterest = {
         name: req.body.name
     }
 
     db
+        .collection('users')
+        .doc(userName)
         .collection('interests')
         .add(newInterest)
-        .then((doc) => {
-            res.json({message: `document ${doc.id} created successfully`})
-        }).catch((err) => {
-            res.status(500).json({error: `something went wrong`});
-            console.error(err);
-    })
+        .then(doc => {
+            const resInterest = newInterest;
+            res.json(resInterest);
+        })
+        .catch(err => {
+                res.status(500).json({error: 'something went wrong'})
+                console.error(err);
+            })
 })
 
 app.get('/users', (req,res) => {

@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="">
+    <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="Backend for 'Interest' page, basic part">
       <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +87,19 @@
       <workItem from="1604863435538" duration="420000" />
       <workItem from="1604864020247" duration="988000" />
       <workItem from="1604948107005" duration="9778000" />
-      <workItem from="1605120744384" duration="2743000" />
+      <workItem from="1605120744384" duration="4578000" />
+      <workItem from="1605188015991" duration="7251000" />
+      <workItem from="1605517420870" duration="618000" />
+      <workItem from="1605978578736" duration="585000" />
     </task>
+    <task id="LOCAL-00001" summary="Backend for 'Interest' page, basic part">
+      <created>1605125140926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605125140926</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,20 +119,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Backend for 'Interest' page, basic part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend for 'Interest' page, basic part" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog" timestamp="1605121105874">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="777" y="93" width="497" height="685" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1605121105874" />
-    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1605120864290">
+    <state x="813" y="194" key="FileChooserDialogImpl" timestamp="1605194147898">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1605120864290" />
+    <state x="813" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1605194147898" />
     <state x="186" y="81" key="SettingsEditor" timestamp="1604134421922">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="186" y="81" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1604134421922" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1605125148752">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1605125148752" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="451a6922-3d09-43ba-91d4-69e4850876ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/pages/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/firebase-debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MVP/bro-online-functions/functions/index.js" afterDir="false" />
@@ -44,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MVP/bro-online-functions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,7 +68,10 @@
       <workItem from="1604134764167" duration="2168000" />
       <workItem from="1604950408893" duration="2748000" />
       <workItem from="1605020401649" duration="4820000" />
-      <workItem from="1605121013850" duration="2089000" />
+      <workItem from="1605121013850" duration="3601000" />
+      <workItem from="1605187970365" duration="46000" />
+      <workItem from="1605192575070" duration="3745000" />
+      <workItem from="1605517374924" duration="32000" />
     </task>
     <servers />
   </component>
@@ -91,18 +95,18 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="94" y="100" width="495" height="677" maximized="true" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1605124311684" />
-    <state x="807" y="194" key="FileChooserDialogImpl" timestamp="1604950558478">
+    <state x="807" y="194" key="FileChooserDialogImpl" timestamp="1605188011025">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="807" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1604950558478" />
-    <state x="20" y="69" width="773" height="534" key="find.popup" timestamp="1605037553255">
+    <state x="807" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1605188011025" />
+    <state x="20" y="69" width="773" height="534" key="find.popup" timestamp="1605192798915">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="20" y="69" width="773" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1605037553255" />
-    <state x="24" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1605123422250">
+    <state x="20" y="69" width="773" height="534" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1605192798915" />
+    <state x="25" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1605192795788">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="24" y="187" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1605123422250" />
+    <state x="25" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1605192795788" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

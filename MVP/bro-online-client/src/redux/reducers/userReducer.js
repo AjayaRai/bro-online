@@ -12,7 +12,6 @@ const initialState = {
 export default function(state = initialState, action) {
     switch (action.type) {
         case SET_AUTHENTICATED:
-            console.log('TEST 1')
             return {
                 ...state,
                 authenticated: true
