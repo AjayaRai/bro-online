@@ -88,7 +88,7 @@ app.get('/group', FBAuth, (req, res) => {
 })
 
 // Signup route
-/*app.post('/signup', (req, res) => {
+app.post('/signup', (req, res) => {
     const newUser = {
         email: req.body.email,
         password: req.body.password,
@@ -127,7 +127,7 @@ app.get('/group', FBAuth, (req, res) => {
             console.error(err);
             return res.status(500).json({error: err.code});
     })
-})*/
+})
 
 app.post('/login', (req,res) => {
     const user = {
@@ -179,9 +179,8 @@ app.post('/add_interest', FBAuth, (req, res) => {
         .doc(userName)
         .collection('interests')
         .add(newInterest)
-        .then(doc => {
-            const resInterest = newInterest;
-            res.json(resInterest);
+        .then(() => {
+            res.json(newInterest);
         })
         .catch(err => {
                 res.status(500).json({error: 'something went wrong'})
@@ -189,25 +188,13 @@ app.post('/add_interest', FBAuth, (req, res) => {
             })
 })
 
-app.get('/users', (req,res) => {
-    db.collection('users')
-        .get()
-        .then((data) => {
-            let jpt = {};
-            let users = [];
+app.get('/user', FBAuth, (req,res) => {
+    let userData = {};
+    userData.credentials = {};
+    userData.credentials.userName = {};
 
-            data.forEach((doc) => {
-                users.push({
-                    name: doc.data().name,
-                    userName: doc.data().userName,
-                })
-            })
-
-            jpt.credentials = users[0];
-            return res.json(jpt);
-        }).catch((err) => {
-            console.error(err);
-        })
+    userData.credentials.userName = req.user.userName;
+    return res.json(userData);
 })
 
 exports.api = functions.region('europe-west2').https.onRequest(app);
