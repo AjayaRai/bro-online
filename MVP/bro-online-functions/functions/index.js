@@ -147,8 +147,8 @@ app.post('/login', (req,res) => {
 });
 
 
-app.post('/get_interest', FBAuth, (req, res) => {
-    const userName = req.body.userName;
+app.get('/get_interest', FBAuth, (req, res) => {
+    const userName = req.user.userName;
 
     db
         .collection('users')
@@ -169,18 +169,33 @@ app.post('/get_interest', FBAuth, (req, res) => {
 })
 
 app.post('/add_interest', FBAuth, (req, res) => {
-    const userName = req.body.userName;
+    const userName = req.user.userName;
     const newInterest = {
         name: req.body.name
     }
+    let docId;
 
     db
         .collection('users')
         .doc(userName)
         .collection('interests')
         .add(newInterest)
-        .then(() => {
-            res.json(newInterest);
+        .then((doc) => {
+            docId = doc.id;
+
+            db
+                .doc(`/groups/${docId}`)
+                .set({
+                    creator: userName,
+                    name: newInterest.name
+                })
+                .then(() => {
+                    res.json("SUCCESS");
+                })
+                .catch((err) => {
+                    console.error(err);
+                    return res.status(500).json({error: err.code});
+                })
         })
         .catch(err => {
                 res.status(500).json({error: 'something went wrong'})

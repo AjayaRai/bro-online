@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from "axios";
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     state = {
@@ -8,29 +10,32 @@ class Home extends Component {
 
     componentDidMount() {
         axios
-            .get('/interest')
+            .get('/get_interest')
             .then((res) => {
-                console.log('XXX');
-                console.log(res.data)
                 this.setState({
                     interests: res.data
                 })
             }).catch((err) => {
-                console.error(err);
-            })
+            console.error(err);
+        })
     }
+
 
     render() {
         let x = this.state.interests ? (
-            this.state.interests.map(interest => <p>{interest.name}</p>)
+            this.state.interests.map(interest => <p><Link to={`/group`}>{interest.name}</Link></p>)
         ) : <p>Loading...</p>
-
         return (
             <div>
-                <h1>{x}</h1>
+                <h1>{`My Interests`}</h1>
+                {x}
             </div>
         );
     }
 }
 
-export default Home;
+const mapStateToProps = (state) => ({
+    user: state.user
+})
+
+export default connect(mapStateToProps)(Home);
