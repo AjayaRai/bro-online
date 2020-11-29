@@ -2,19 +2,19 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Tribe from "../components/Tribe";
 
-
-// TODO probelm 'replace' of undefined, login with 'user10email.com' to fix it? This user shouldn't be logging in?
 class Group extends Component {
     state = {
-        group: null,
+        groupMembers: null,
     }
 
     componentDidMount() {
+        const docId = this.props.match.params.docId;
+
         axios
-            .get("/group")
+            .get(`/groups/${docId}`)
             .then((res) => {
                 this.setState({
-                    group: res.data[0],
+                    groupMembers: res.data,
                 })
 
             }).catch((err) => {
@@ -25,7 +25,7 @@ class Group extends Component {
     render() {
         return (
             <div>
-                <Tribe group={this.state.group ? this.state.group : null}/>
+                <Tribe groupMembers={this.state.groupMembers ? this.state.groupMembers : null}/>
             </div>
         );
     }

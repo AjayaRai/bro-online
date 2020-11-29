@@ -43,7 +43,7 @@ class App extends Component {
             <Provider store={store}>
                 <Router>
                     <Switch>
-                        <Route exact path={`/group`} component={group}/>
+                        <Route exact path={`/group/:docId`} component={group}/>
                         <Route exact path={`/`} component={home}/>
                         <AuthRoute exact path={`/login`} component={login} />
                     </Switch>

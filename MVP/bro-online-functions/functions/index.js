@@ -45,47 +45,38 @@ const FBAuth = (req, res, next) => {
         })
 }
 
-app.get('/group', FBAuth, (req, res) => {
-    db.collection('groups')
+app.get('/groups/:docId', FBAuth, (req, res) => {
+    let groupMembers = [];
+    let groupMembersUserName = [];
+    db
+        .doc(`/groups/${req.params.docId}`)
+        .collection("groupMembers")
         .get()
         .then((data) => {
-            let groups = [];
-            data.forEach((docc) => {
-                groups.push({
-                    id: docc.id,
-                    name: docc.data().name,
-                    creator: docc.data().creator,
-                    groupMembers: []
-                })
-
-                let groupMembersUserName = [];
-                db.collection("groups")
-                    .doc(docc.id)
-                    .collection('groupMembers')
-                    .get()
-                    .then((data2) => {
-                        data2.forEach((doc2) => {
-                            groupMembersUserName.push(doc2.data().userName)
-                        })
-                        db.collection('users')
-                            .where('userName', 'in', groupMembersUserName)
-                            .get()
-                            .then((data) => {
-                                data.forEach((doc4) => {
-                                    groups[0].groupMembers.push({
-                                        name: doc4.data().name
-                                    })
-                                })
-                                return res.json(groups);
-                            })
-                    }).catch((err) => {
-                        console.error(err);
-                })
+            data.forEach((doc) => {
+                groupMembersUserName.push(doc.data().userName)
             })
+
+            getNameFromUserName(groupMembersUserName, groupMembers, res);
         }).catch((err) => {
             console.error(err);
     })
 })
+
+function getNameFromUserName(groupMembersUserName, groupMembers, res) {
+    db
+        .collection('users')
+        .where('userName', 'in', groupMembersUserName)
+        .get()
+        .then((data) => {
+            data.forEach((doc) => {
+                groupMembers.push({
+                    name: doc.data().name
+                })
+            })
+            return res.json(groupMembers);
+        })
+}
 
 // Signup route
 app.post('/signup', (req, res) => {
@@ -159,7 +150,12 @@ app.get('/get_interest', FBAuth, (req, res) => {
             let interests = [];
 
             data.forEach((doc) => {
-                interests.push(doc.data());
+                let schema = {
+                    name: doc.data().name,
+                    docId: doc.id
+                }
+
+                interests.push(schema);
             });
 
             return res.json(interests);

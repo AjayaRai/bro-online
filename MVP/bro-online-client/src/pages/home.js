@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import axios from "axios";
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import AddInterest from "../components/AddInterest";
 
 class Home extends Component {
     state = {
-        interests: []
+        schema: []
     }
 
     componentDidMount() {
@@ -13,7 +14,7 @@ class Home extends Component {
             .get('/get_interest')
             .then((res) => {
                 this.setState({
-                    interests: res.data
+                    schema: res.data
                 })
             }).catch((err) => {
             console.error(err);
@@ -22,13 +23,14 @@ class Home extends Component {
 
 
     render() {
-        let x = this.state.interests ? (
-            this.state.interests.map(interest => <p><Link to={`/group`}>{interest.name}</Link></p>)
+        let x = this.state.schema ? (
+            this.state.schema.map(schema => <p><Link to={`/group/${schema.docId}`}>{schema.name}</Link></p>)
         ) : <p>Loading...</p>
         return (
             <div>
                 <h1>{`My Interests`}</h1>
                 {x}
+                <AddInterest />
             </div>
         );
     }
