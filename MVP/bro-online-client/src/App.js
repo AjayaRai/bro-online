@@ -14,6 +14,7 @@ import AuthRoute from './util/AuthRoute';
 import group from "./pages/group";
 import login from "./pages/login";
 import home from "./pages/home";
+import search from "./pages/search";
 import axios from "axios";
 import {SET_AUTHENTICATED} from "./redux/types";
 
@@ -33,10 +34,6 @@ if (token) {
     }
 }
 
-// TODO AT trying to understand what am I doing and how am it trying to make it work, and how the authenticated isn't being set to 'true' on redux
-
-// TODO my mistake === brance 4 compare brance 3 on gitbash??
-
 class App extends Component {
     render() {
         return (
@@ -45,6 +42,8 @@ class App extends Component {
                     <Switch>
                         <Route exact path={`/group/:docId`} component={group}/>
                         <Route exact path={`/`} component={home}/>
+                        <Route exact path={`/group/:docId/search`} component={search}/>
+                        <Route exact path={`/search`} component={search}/>
                         <AuthRoute exact path={`/login`} component={login} />
                     </Switch>
                 </Router>

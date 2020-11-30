@@ -208,4 +208,24 @@ app.get('/user', FBAuth, (req,res) => {
     return res.json(userData);
 })
 
+app.get('/users', FBAuth, (req, res) => {
+    const jsonSchema = [];
+
+    db
+        .collection('users')
+        .get()
+        .then((data) => {
+            data.forEach((doc) => {
+                jsonSchema.push({
+                    name: doc.data().name,
+                    userName: doc.data().userName
+                });
+
+            })
+            res.json(jsonSchema);
+        }).catch((err) => {
+            console.error(err);
+    })
+})
+
 exports.api = functions.region('europe-west2').https.onRequest(app);

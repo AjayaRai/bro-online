@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Tribe from "../components/Tribe";
+import AddMember from "../components/AddMember";
 
 class Group extends Component {
     state = {
@@ -26,6 +27,7 @@ class Group extends Component {
         return (
             <div>
                 <Tribe groupMembers={this.state.groupMembers ? this.state.groupMembers : null}/>
+                <AddMember docId={this.props.match.params.docId}/>
             </div>
         );
     }
