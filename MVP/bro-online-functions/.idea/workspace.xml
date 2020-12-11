@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="Backend for 'Interest' page, basic part">
-      <change beforePath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Challenge Week/Project/socialape-functions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/pages/group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/actions/userActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bro-online-client/src/redux/reducers/userReducer.js" afterDir="false" />
+    <list default="true" id="0688e7f3-2196-4ae5-8f4b-3679fbbfafec" name="Default Changelist" comment="Finish the plan of the Technical Documentation structure, nearly completed the backend section for the first draft">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +85,7 @@
       <workItem from="1605188015991" duration="7251000" />
       <workItem from="1605517420870" duration="618000" />
       <workItem from="1605978578736" duration="585000" />
+      <workItem from="1607676120022" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="Backend for 'Interest' page, basic part">
       <created>1605125140926</created>
