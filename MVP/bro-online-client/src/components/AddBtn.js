@@ -1,15 +1,45 @@
 import React, {Component} from 'react';
-
+import axios from "axios";
+import { Redirect } from 'react-router-dom';
 
 class AddBtn extends Component {
-    // TODO copy the code https://stackoverflow.com/questions/29810914/react-js-onclick-cant-pass-value-to-method to make the passing the parameter work, once I have docId and the userName then I can make the back end for adding a person to the group!!??
+    state = {
+        redirect: false
+    }
+
     handleClick = () => {
-        //this.props.onHeaderClick(this.props.value);
-        console.log('value', this.props.userName);
-        console.log("pathName", window.location.pathname);
+        let userName = this.props.userName;
+        let docId = this.extractDocIdFromURL(window.location.pathname);
+
+        let jsonFormat = {
+            userName: userName,
+            docId: docId
+        }
+
+        axios
+            .post('/add_member', jsonFormat)
+            .then(() => {
+                this.setState({ redirect: true });
+            })
+            .catch((err) => {
+                console.error(err);
+            })
+    }
+
+    extractDocIdFromURL = (url) => {
+        let docIdBeginningIndex = url.indexOf("group/");
+        let docIdEndIndex = url.indexOf("/search");
+
+        return url.slice(docIdBeginningIndex + 6, docIdEndIndex);
     }
 
     render() {
+        const {redirect} = this.state;
+
+        if (redirect) {
+            return <Redirect to="/group/5yx2h1tmGPttPIccSuI0" />;
+        }
+
         return (
             <button onClick={this.handleClick}>
                 Add
