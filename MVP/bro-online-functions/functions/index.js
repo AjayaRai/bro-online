@@ -228,4 +228,24 @@ app.get('/users', FBAuth, (req, res) => {
     })
 })
 
+app.post('/add_member', FBAuth, (req, res) => {
+    const docId = req.body.docId;
+    const newMember = {
+        userName: req.body.userName
+    }
+
+    db
+        .collection('groups')
+        .doc(docId)
+        .collection('groupMembers')
+        .add(newMember)
+        .then(() => {
+            res.json("SUCCESS");
+        })
+        .catch((err) => {
+            console.error(err);
+            return res.status(500).json({error: err.code});
+        })
+})
+
 exports.api = functions.region('europe-west2').https.onRequest(app);
