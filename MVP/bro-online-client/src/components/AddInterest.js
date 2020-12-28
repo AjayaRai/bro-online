@@ -24,8 +24,6 @@ class AddInterest extends Component {
             .catch((err) => {
                 console.error(err);
             })
-
-        event.preventDefault();
     }
 
     render() {
