@@ -57,7 +57,9 @@ app.get('/groups/:docId', FBAuth, (req, res) => {
                 groupMembersUserName.push(doc.data().userName)
             })
 
-            getNameFromUserName(groupMembersUserName, groupMembers, res);
+            if (groupMembersUserName.length !== 0) {
+                getNameFromUserName(groupMembersUserName, groupMembers, res);
+            }
         }).catch((err) => {
             console.error(err);
     })
@@ -75,7 +77,9 @@ function getNameFromUserName(groupMembersUserName, groupMembers, res) {
                 })
             })
             return res.json(groupMembers);
-        })
+        }).catch((err) => {
+            console.error(err);
+    })
 }
 
 // Signup route
