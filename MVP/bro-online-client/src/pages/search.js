@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import AddBtn from "../components/AddBtn";
+import LogOutBtn from "../components/LogOutBtn";
 
 class Group extends Component {
 
@@ -33,6 +34,7 @@ class Group extends Component {
             <div>
                 <h1>Search Page</h1>
                 {user}
+                <LogOutBtn />
             </div>
         );
     }

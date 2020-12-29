@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Tribe from "../components/Tribe";
 import AddMember from "../components/AddMember";
+import LogOutBtn from "../components/LogOutBtn";
 
 class Group extends Component {
     state = {
@@ -28,6 +29,7 @@ class Group extends Component {
             <div>
                 <Tribe groupMembers={this.state.groupMembers ? this.state.groupMembers : null}/>
                 <AddMember docId={this.props.match.params.docId}/>
+                <LogOutBtn />
             </div>
         );
     }

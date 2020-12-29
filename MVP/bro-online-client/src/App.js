@@ -15,7 +15,6 @@ import group from "./pages/group";
 import login from "./pages/login";
 import home from "./pages/home";
 import search from "./pages/search";
-import axios from "axios";
 import {SET_AUTHENTICATED} from "./redux/types";
 
 import { logoutUser, getUserData } from './redux/actions/userActions';
@@ -29,7 +28,7 @@ if (token) {
         window.location.href = '/login';
     } else {
         store.dispatch({ type: SET_AUTHENTICATED });
-        axios.defaults.headers.common['Authorization'] = token;
+        //axios.defaults.headers.common['Authorization'] = token;
         store.dispatch(getUserData());
     }
 }
