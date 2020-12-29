@@ -4,12 +4,15 @@ import { Redirect } from 'react-router-dom';
 
 class AddBtn extends Component {
     state = {
-        redirect: false
+        redirect: false,
+        docId: ""
     }
 
     handleClick = () => {
         let userName = this.props.userName;
         let docId = this.extractDocIdFromURL(window.location.pathname);
+
+        this.state.docId = docId;
 
         let jsonFormat = {
             userName: userName,
@@ -37,7 +40,7 @@ class AddBtn extends Component {
         const {redirect} = this.state;
 
         if (redirect) {
-            return <Redirect to="/group/5yx2h1tmGPttPIccSuI0" />;
+            return <Redirect to={`/group/${this.state.docId}`} />;
         }
 
         return (
