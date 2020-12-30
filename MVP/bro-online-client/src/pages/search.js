@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import AddBtn from "../components/AddBtn";
-import LogOutBtn from "../components/LogOutBtn";
+import Navbar from "../components/Navbar";
 
 class Group extends Component {
 
@@ -31,11 +31,13 @@ class Group extends Component {
             )
         ) : <p></p>;
         return (
-            <div>
-                <h1>Search Page</h1>
-                {user}
-                <LogOutBtn />
-            </div>
+            <>
+                <Navbar />
+                <div>
+                    <h1>Search Page</h1>
+                    {user}
+                </div>
+            </>
         );
     }
 }

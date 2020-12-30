@@ -3,8 +3,8 @@ import axios from "axios";
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 import AddInterest from "../components/AddInterest";
-import LogOutBtn from "../components/LogOutBtn";
 import { Redirect } from 'react-router-dom';
+import Navbar from "../components/Navbar";
 
 class Home extends Component {
     state = {
@@ -39,12 +39,15 @@ class Home extends Component {
         ) : <p></p>
 
         return (
-            <div>
-                <h1>{`My Interests`}</h1>
-                {x}
-                <AddInterest />
-                <LogOutBtn />
-            </div>
+            <>
+                <Navbar />
+
+                <div>
+                    <h1>{`My Interests`}</h1>
+                    {x}
+                    <AddInterest />
+                </div>
+            </>
         );
     }
 }
