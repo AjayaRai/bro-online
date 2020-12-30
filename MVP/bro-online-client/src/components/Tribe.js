@@ -6,7 +6,7 @@ class Tribe extends Component {
 
         let groupMember = groupMembers ? (
             groupMembers.map(groupMember => <p>{groupMember.name}</p>)
-        ) : <p>Loading...</p>
+        ) : <p></p>
 
 
         return (

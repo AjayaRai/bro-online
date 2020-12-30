@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 import AddInterest from "../components/AddInterest";
 import LogOutBtn from "../components/LogOutBtn";
+import { Redirect } from 'react-router-dom';
 
 class Home extends Component {
     state = {
@@ -23,9 +24,19 @@ class Home extends Component {
     }
 
     render() {
+        const {
+            user: {
+                authenticated
+            }
+        } = this.props;
+
+        if (!authenticated) {
+            return <Redirect to={`/login`} />
+        }
+
         let x = this.state.schema ? (
             this.state.schema.map(schema => <p><Link to={`/group/${schema.docId}`}>{schema.name}</Link></p>)
-        ) : <p>Loading...</p>
+        ) : <p></p>
 
         return (
             <div>

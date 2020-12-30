@@ -29,7 +29,7 @@ class Group extends Component {
             this.state.users.map(user =>
                 <p>{user.name} <AddBtn userName={user.userName}/></p>
             )
-        ) : <p>Loading...</p>;
+        ) : <p></p>;
         return (
             <div>
                 <h1>Search Page</h1>
