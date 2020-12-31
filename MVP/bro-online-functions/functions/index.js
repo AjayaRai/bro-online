@@ -87,7 +87,7 @@ app.post('/signup', (req, res) => {
         email: req.body.email,
         password: req.body.password,
         userName: req.body.userName,
-        name: req.body.name
+        namee: req.body.namee
     }
 
     let token, userId;
@@ -110,7 +110,8 @@ app.post('/signup', (req, res) => {
             const userCredentials = {
                 userName: newUser.userName,
                 email: newUser.email,
-                userId
+                userId,
+                namee: newUser.namee
             }
 
             return db.doc(`/users/${newUser.userName}`).set(userCredentials);
@@ -221,7 +222,7 @@ app.get('/users', FBAuth, (req, res) => {
         .then((data) => {
             data.forEach((doc) => {
                 jsonSchema.push({
-                    name: doc.data().name,
+                    name: doc.data().namee,
                     userName: doc.data().userName
                 });
 

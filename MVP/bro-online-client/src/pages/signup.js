@@ -12,7 +12,7 @@ class signup extends Component {
             email: '',
             password: '',
             userName: '',
-            name: '',
+            namee: '',
         }
     }
 
@@ -22,7 +22,7 @@ class signup extends Component {
             email: this.state.email,
             password: this.state.password,
             userName: this.state.userName,
-            name: this.state.name
+            namee: this.state.namee
         };
 
         this.props.signupUser(newUserData, this.props.history);
@@ -42,7 +42,7 @@ class signup extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     Name<br/>
-                    <input id={`name`} name={`name`} type={`text`} value={this.state.name} onChange={this.handleChange}/><br/>
+                    <input id={`namee`} name={`namee`} type={`text`} value={this.state.namee} onChange={this.handleChange}/><br/>
                     User Name<br/>
                     <input id={`userName`} name={`userName`} type={`text`} value={this.state.userName} onChange={this.handleChange}/><br/>
                     Email<br/>
