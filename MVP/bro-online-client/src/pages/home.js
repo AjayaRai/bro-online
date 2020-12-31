@@ -31,7 +31,7 @@ class Home extends Component {
         } = this.props;
 
         if (!authenticated) {
-            return <Redirect to={`/login`} />
+            return <Redirect to={`/signup`} />
         }
 
         let x = this.state.schema ? (

@@ -14,9 +14,11 @@ import AuthRoute from './util/AuthRoute';
 import group from "./pages/group";
 import login from "./pages/login";
 import home from "./pages/home";
+import signup from "./pages/signup";
 import search from "./pages/search";
-import {SET_AUTHENTICATED} from "./redux/types";
 
+// Redux
+import {SET_AUTHENTICATED} from "./redux/types";
 import { logoutUser, getUserData } from './redux/actions/userActions';
 
 
@@ -44,6 +46,7 @@ class App extends Component {
                         <Route exact path={`/group/:docId/search`} component={search}/>
                         <Route exact path={`/search`} component={search}/>
                         <AuthRoute exact path={`/login`} component={login} />
+                        <AuthRoute exact path="/signup" component={signup} />
                     </Switch>
                 </Router>
             </Provider>

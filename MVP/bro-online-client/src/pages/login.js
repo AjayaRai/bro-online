@@ -28,12 +28,14 @@ class login extends Component {
         return (
             <div>
                 <h1>Login Page</h1>
+
                 <form onSubmit={this.handleSubmit}>
                     <input id={`email`} name={`email`} type={`text`} value={this.state.email} onChange={this.handleChange}/>
                     <input id={`password`} name={`password`} type={`text`} value={this.state.password} onChange={this.handleChange}/>
 
                     <input type={`submit`} value={`Login`}/>
                 </form>
+
             </div>
         );
     }

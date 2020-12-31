@@ -23,6 +23,21 @@ export const logoutUser = () => (dispatch) => {
     dispatch({type: SET_UNAUTHENTICATED});
 }
 
+export const signupUser = (newUserData, history) => (dispatch) => {
+    axios
+        .post('/signup', newUserData)
+        .then((res) => {
+            setAuthorizationHeader(res.data.token);
+            dispatch(getUserData());
+            history.push('/');
+        })
+        .catch((err) => {
+            dispatch({
+                payload: err.response.data
+            });
+        });
+};
+
 export const getUserData = () => (dispatch) => {
     axios
         .get('/user')
