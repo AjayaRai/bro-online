@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import jwtDecode from 'jwt-decode';
+import axios from "axios";
 
 // Redux
 import {Provider} from 'react-redux';
@@ -30,7 +31,7 @@ if (token) {
         window.location.href = '/login';
     } else {
         store.dispatch({ type: SET_AUTHENTICATED });
-        //axios.defaults.headers.common['Authorization'] = token;
+        axios.defaults.headers.common['Authorization'] = token;
         store.dispatch(getUserData());
     }
 }

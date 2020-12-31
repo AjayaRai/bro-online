@@ -19,7 +19,6 @@ firebase.initializeApp(firebaseConfig);
 // FBAuth == Firebase Auth
 const FBAuth = (req, res, next) => {
     let idToken;
-
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
         idToken = req.headers.authorization.split('Bearer ')[1];
     } else {
@@ -88,6 +87,7 @@ app.post('/signup', (req, res) => {
         email: req.body.email,
         password: req.body.password,
         userName: req.body.userName,
+        name: req.body.name
     }
 
     let token, userId;
