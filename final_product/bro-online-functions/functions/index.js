@@ -72,7 +72,7 @@ function getNameFromUserName(groupMembersUserName, groupMembers, res) {
         .then((data) => {
             data.forEach((doc) => {
                 groupMembers.push({
-                    name: doc.data().name
+                    name: doc.data().namee
                 })
             })
             return res.json(groupMembers);
