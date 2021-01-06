@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Redirect } from 'react-router-dom';
 import {logoutUser} from "../redux/actions/userActions";
 import { connect } from 'react-redux';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 class LogOutBtn extends Component {
     state = {
@@ -21,8 +22,10 @@ class LogOutBtn extends Component {
         }
 
         return (
-            <button onClick={this.handleLogout}>
-                LogOut
+            <button id={`logout__btn`} onClick={this.handleLogout}>
+                <div className={`header__option`}>
+                    <ExitToAppIcon fontSize={`large`}/>
+                </div>
             </button>
         );
     }
