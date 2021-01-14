@@ -191,7 +191,19 @@ app.post('/add_interest', FBAuth, (req, res) => {
                     name: newInterest.name
                 })
                 .then(() => {
-                    res.json("SUCCESS");
+                    db
+                        .collection('groups')
+                        .doc(docId)
+                        .collection('groupMembers')
+                        .add({
+                            userName
+                        })
+                        .then(() => {
+                            res.json("SUCCESS");
+                        })
+                        .catch((err) => {
+                            console.error(err);
+                        })
                 })
                 .catch((err) => {
                     console.error(err);
