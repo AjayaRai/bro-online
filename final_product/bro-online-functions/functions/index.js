@@ -245,7 +245,24 @@ app.post('/add_member', FBAuth, (req, res) => {
         .collection('groupMembers')
         .add(newMember)
         .then(() => {
-            res.json("SUCCESS");
+            db
+                .doc(`/groups/${docId}`)
+                .get()
+                .then((data) => {
+                    let newInterest = data.data().name;
+                    db
+                        .doc(`users/${newMember.userName}/interests/${docId}`)
+                        .set({
+                            name: newInterest
+                        })
+                        .then(() => {
+                            res.json("SUCCESS");
+                        }).catch((err) => {
+                            console.error(err);
+                        })
+                }).catch((err) => {
+                    console.error(err);
+            })
         })
         .catch((err) => {
             console.error(err);
