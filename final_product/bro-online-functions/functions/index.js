@@ -196,7 +196,8 @@ app.post('/add_interest', FBAuth, (req, res) => {
                         .collection('groups')
                         .doc(docId)
                         .collection('groupMembers')
-                        .add({
+                        .doc(userName)
+                        .set({
                             userName
                         })
                         .then(() => {
@@ -246,6 +247,7 @@ app.get('/users', FBAuth, (req, res) => {
     })
 })
 
+
 app.post('/add_member', FBAuth, (req, res) => {
     const docId = req.body.docId;
     const newMember = {
@@ -256,7 +258,8 @@ app.post('/add_member', FBAuth, (req, res) => {
         .collection('groups')
         .doc(docId)
         .collection('groupMembers')
-        .add(newMember)
+        .doc(req.body.userName)
+        .set(newMember)
         .then(() => {
             db
                 .doc(`/groups/${docId}`)
@@ -283,4 +286,44 @@ app.post('/add_member', FBAuth, (req, res) => {
         })
 })
 
+
+app.delete('/group/:groupId/groupMember/:userId', FBAuth, (req, res) => {
+    db
+        .collection('groups')
+        .doc(req.params.groupId)
+        .collection('groupMembers')
+        .doc(req.params.userId)
+        .delete()
+        .then(() => {
+            res.json({message: "GroupMember deleted successfully"})
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+})
+
+
 exports.api = functions.region('europe-west2').https.onRequest(app);
+
+
+exports.rmvMemFromGrp = functions
+    .region('europe-west2')
+    .firestore
+    .document('groups/{groupId}/groupMembers/{userName}')
+    .onDelete(async (snapshot, context) => {
+        const groupId = context.params.groupId;
+        const userName = context.params.userName;
+
+        db
+            .collection('users')
+            .doc(userName)
+            .collection('interests')
+            .doc(groupId)
+            .delete()
+            .then(() => {
+                return Promise.resolve("Successfully deleted the relevant interest"); // Not sure how to display msg, is it even returning this?
+            })
+            .catch((err) => {
+                console.error(err);
+            })
+    })

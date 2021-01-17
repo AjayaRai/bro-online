@@ -67,3 +67,6 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# service api key need protection
+functions/service-account.json
