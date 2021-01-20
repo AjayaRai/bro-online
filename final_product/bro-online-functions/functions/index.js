@@ -302,9 +302,22 @@ app.delete('/group/:groupId/groupMember/:userId', FBAuth, (req, res) => {
         })
 })
 
+app.get('/t', (req, res) => {
+    db
+        .collection('test')
+        .doc('testId')
+        .get()
+        .then((data) => {
+            let x = data.data().name;
+
+            res.json({name: x})
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+})
 
 exports.api = functions.region('europe-west2').https.onRequest(app);
-
 
 exports.rmvMemFromGrp = functions
     .region('europe-west2')
