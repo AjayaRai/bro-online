@@ -45,7 +45,7 @@ describe('onDeleteOFTheUser', () =>{
     })
 
     test('Testing deletion of a group', async () => {
-        jest.setTimeout(40001);
+        jest.setTimeout(60000);
 
         // create users for testing and their same interest
         let user999 = "users/user999/interests/interest999";
@@ -66,13 +66,12 @@ describe('onDeleteOFTheUser', () =>{
         await admin.firestore().doc(grpMemUsr997).create({userName: "user997"});
 
         const res = await request('http://localhost:5000/bro-online/europe-west2/api')
-            .delete('/group')
+            .delete('/group/interest999')
             .set('Authorization', 'Bearer ' + tokenn);
 
-        expect(res.statusCode).toEqual(202)
-        expect(res.body).toHaveProperty('delete')
+        expect(res.statusCode).toEqual(200);
 
-        await sleeep(40000);
+        await sleeep(20000);
 
         let pathToDeletedGroup = "groups/interest999"
         const deletedGroup = await admin.firestore().doc(pathToDeletedGroup).get();

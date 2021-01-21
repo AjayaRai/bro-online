@@ -302,15 +302,24 @@ app.delete('/group/:groupId/groupMember/:userId', FBAuth, (req, res) => {
         })
 })
 
-app.get('/t', (req, res) => {
+app.delete('/group/:groupId', FBAuth, (req, res) => {
+    const batch = db.batch();
+
     db
-        .collection('test')
-        .doc('testId')
+        .collection('groups')
+        .doc(req.params.groupId)
+        .collection('groupMembers')
         .get()
         .then((data) => {
-            let x = data.data().name;
+            data.forEach((doc) => {
+                batch.delete(db.doc(`/groups/${req.params.groupId}/groupMembers/${doc.id}`));
+            })
 
-            res.json({name: x})
+            batch.delete(db.doc(`/groups/${req.params.groupId}`));
+
+            batch.commit();
+
+            res.json({message: "Deleted successfully the group " + req.params.groupId});
         })
         .catch((err) => {
             console.error(err);
