@@ -317,9 +317,20 @@ app.delete('/group/:groupId', FBAuth, (req, res) => {
 
             batch.delete(db.doc(`/groups/${req.params.groupId}`));
 
-            batch.commit();
-
-            res.json({message: "Deleted successfully the group " + req.params.groupId});
+            batch
+                .commit()
+                .then(() => {
+                    sleeep(5000)
+                        .then(() => {
+                            res.json({message: "Deleted successfully the group " + req.params.groupId});
+                        })
+                        .catch((err) => {
+                            console.error(err);
+                        });
+                })
+                .catch((err) => {
+                    console.error(err);
+                });
         })
         .catch((err) => {
             console.error(err);
@@ -349,3 +360,7 @@ exports.rmvMemFromGrp = functions
                 console.error(err);
             })
     })
+
+function sleeep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

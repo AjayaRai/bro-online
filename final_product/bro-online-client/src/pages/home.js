@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import AddInterest from "../components/AddInterest";
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
+import RmvGroupBtn from "../components/RmvGroupBtn";
 
 class Home extends Component {
     state = {
@@ -34,9 +35,20 @@ class Home extends Component {
             return <Redirect to={`/signup`} />
         }
 
-        let x = this.state.schema ? (
-            this.state.schema.map(schema => <p><Link to={`/group/${schema.docId}`}>{schema.name}</Link></p>)
-        ) : <p></p>
+        let schema = this.state.schema;
+        let x = [];
+        if (schema.length !== 0) {
+            for (let i=0; i<schema.length; i++) {
+                x[i] = (
+                    <p>
+                        <Link to={`/group/${schema[i].docId}`}>
+                            {schema[i].name}
+                        </Link>
+                        <RmvGroupBtn groupDocId={schema[i].docId} />
+                    </p>
+                );
+            }
+        }
 
         return (
             <>
@@ -44,7 +56,7 @@ class Home extends Component {
 
                 <div>
                     <h1>{`My Interests`}</h1>
-                    {x}
+                    {x.length !== 0 ? x : null}
                     <AddInterest />
                 </div>
             </>
