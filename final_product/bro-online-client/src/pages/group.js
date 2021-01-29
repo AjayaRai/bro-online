@@ -3,6 +3,7 @@ import axios from 'axios';
 import Tribe from "../components/Tribe";
 import AddMember from "../components/AddMember";
 import Navbar from "../components/Navbar";
+import BioOfGrp from "../components/BioOfGrp";
 
 class Group extends Component {
     state = {
@@ -32,6 +33,10 @@ class Group extends Component {
                     <Tribe groupMembers={this.state.groupMembers ? this.state.groupMembers : null}/>
                     <AddMember docId={this.props.match.params.docId}/>
                 </div>
+
+                <br/>
+
+                <BioOfGrp groupDocId={this.props.match.params.docId}/>
             </>
         );
     }

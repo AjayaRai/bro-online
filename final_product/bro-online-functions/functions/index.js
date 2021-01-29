@@ -346,6 +346,36 @@ app.delete('/group/:groupId', FBAuth, (req, res) => {
         })
 })
 
+
+app.get('/group_bio/:docId', FBAuth, (req, res) => {
+    db
+        .doc(`/groups/${req.params.docId}`)
+        .get()
+        .then((data) => {
+            console.log(data.data().bio);
+            res.json({
+                bio: data.data().bio
+            });
+        })
+        .catch(err => {
+            console.error(err);
+        })
+})
+
+app.post('/group_bio/:docId', FBAuth, (req, res) => {
+    db
+        .doc(`groups/${req.params.docId}`)
+        .set({
+            bio: req.body.bio
+        })
+        .then(() => {
+            res.json({msg: "SUCCESSFUL"});
+        }).catch((err) => {
+            console.error(err);
+        })
+})
+
+
 exports.api = functions.region('europe-west2').https.onRequest(app);
 
 exports.rmvMemFromGrp = functions
