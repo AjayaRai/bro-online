@@ -27,7 +27,8 @@ class Home extends Component {
     render() {
         const {
             user: {
-                authenticated
+                authenticated,
+                credentials: { imageUrl },
             }
         } = this.props;
 
@@ -52,7 +53,7 @@ class Home extends Component {
 
         return (
             <>
-                <Navbar />
+                <Navbar imgUrl={imageUrl}/>
 
                 <div>
                     <h1>{`My Interests`}</h1>

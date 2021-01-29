@@ -91,6 +91,8 @@ app.post('/signup', (req, res) => {
         namee: req.body.namee
     }
 
+    const noImg = 'no-img.png';
+
     let token, userId;
     db.doc(`/users/${newUser.userName}`).get()
         .then((doc) => {
@@ -112,7 +114,8 @@ app.post('/signup', (req, res) => {
                 userName: newUser.userName,
                 email: newUser.email,
                 userId,
-                namee: newUser.namee
+                namee: newUser.namee,
+                imageUrl: `https://firebasestorage.googleapis.com/v0/b/${firebaseConfig.storageBucket}/o/${noImg}?alt=media`,
             }
 
             return db.doc(`/users/${newUser.userName}`).set(userCredentials);
@@ -220,11 +223,17 @@ app.post('/add_interest', FBAuth, (req, res) => {
 
 app.get('/user', FBAuth, (req,res) => {
     let userData = {};
-    userData.credentials = {};
-    userData.credentials.userName = {};
-
-    userData.credentials.userName = req.user.userName;
-    return res.json(userData);
+    db.doc(`/users/${req.user.userName}`).get()
+        .then(doc => {
+            if (doc.exists) {
+                userData.credentials = doc.data();
+                return res.json(userData);
+            }
+        })
+        .catch(err => {
+            console.error(err);
+            return res.status(500).json({error: err.code});
+        })
 })
 
 app.get('/users', FBAuth, (req, res) => {

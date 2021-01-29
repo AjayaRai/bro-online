@@ -3,11 +3,16 @@ import LogOutBtn from "./LogOutBtn";
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
 import HomeIcon from '@material-ui/icons/Home';
+import Avatar from "@material-ui/core/Avatar";
 
-// TODO style via fb-clone OR like the social ape???
-function Navbar() {
+function Navbar({imgUrl}) {
+
     return (
         <div className={`header`}>
+            <div className="header__info">
+                <Avatar src={imgUrl}/>
+                <h4>HardCoded name</h4>
+            </div>
             <Link to="/">
                 <div className={`header__option`}>
                     <HomeIcon fontSize={`large`}/>
