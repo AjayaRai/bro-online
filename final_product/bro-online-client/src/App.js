@@ -21,6 +21,7 @@ import search from "./pages/search";
 // Redux
 import {SET_AUTHENTICATED} from "./redux/types";
 import { logoutUser, getUserData } from './redux/actions/userActions';
+import search_grp_bro from "./pages/search_grp_bro";
 
 
 const token = localStorage.FBIdToken;
@@ -45,7 +46,7 @@ class App extends Component {
                         <Route exact path={`/group/:docId`} component={group}/>
                         <Route exact path={`/`} component={home}/>
                         <Route exact path={`/group/:docId/search`} component={search}/>
-                        <Route exact path={`/search`} component={search}/>
+                        <Route exact path={`/search_grp_bro`} component={search_grp_bro}/>
                         <AuthRoute exact path={`/login`} component={login} />
                         <AuthRoute exact path="/signup" component={signup} />
                     </Switch>

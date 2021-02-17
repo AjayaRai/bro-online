@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import "./Navbar.css";
 import HomeIcon from '@material-ui/icons/Home';
 import Avatar from "@material-ui/core/Avatar";
+import SearchIcon from '@material-ui/icons/Search';
 
 function Navbar({imgUrl}) {
 
@@ -16,6 +17,11 @@ function Navbar({imgUrl}) {
             <Link to="/">
                 <div className={`header__option`}>
                     <HomeIcon fontSize={`large`}/>
+                </div>
+            </Link>
+            <Link to="/search_grp_bro">
+                <div className={`header__option`}>
+                    <SearchIcon fontSize={`large`}/>
                 </div>
             </Link>
             <LogOutBtn />

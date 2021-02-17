@@ -6,11 +6,11 @@
     background-color: black;
     z-index: 100;
     top: 0;
-    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 
 .header__option > .MuiSvgIcon-root {
-    color: blue;
+    color: #6de932;
 }
 
 #logout__btn {

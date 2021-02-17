@@ -30,7 +30,7 @@ const FBAuth = (req, res, next) => {
         .then((decodedToken) => {
             req.user = decodedToken;
             return db.collection('users')
-                .where('userId', '==', req.user.uid)// TODO how to set the userId automatically on the DB?
+                .where('userId', '==', req.user.uid)
                 .limit(1)
                 .get();
         })
@@ -365,7 +365,7 @@ app.get('/group_bio/:docId', FBAuth, (req, res) => {
 app.post('/group_bio/:docId', FBAuth, (req, res) => {
     db
         .doc(`groups/${req.params.docId}`)
-        .set({
+        .update({
             bio: req.body.bio
         })
         .then(() => {
