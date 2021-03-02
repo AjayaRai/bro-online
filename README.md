@@ -2,7 +2,7 @@
 
 In movies, there is always a hero who's against the world, and he/she wins.
 
-Reality check, life is not like that. If you want to do big, then you must have a right team. E.g. solider is never alone in the battlefield.
+Reality check, life is not like that. If you want to do big, then you must have the right team. E.g. solider is never alone in the battlefield.
 
 My objective here is to give people tool which they can use to find people who share similar values and vision that they can work together to obtain it quicker and go further which may not have been possible alone.
 
@@ -20,10 +20,10 @@ Important part is left to the users, who should get off their asses and hustle w
 
 ### Table of contents
 
-Clones created to learn, how to build application using ReactJS and Firebase:
-- facebook-clone
-- slack-clone
-- social ape
+Clones created to learn how to build application using ReactJS and Firebase:
+- [facebook-clone](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Summer%20preparation/Projects)
+- [slack-clone](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Summer%20preparation/Projects)
+- [social ape](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Challenge%20Week/Project)
 
 Firebase stuff:
 - firebase
