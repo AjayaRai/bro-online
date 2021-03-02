@@ -3,7 +3,7 @@ Similar, 'fb-clone' project has also been done with the help of 'Clever Programm
 
 I give full credit to them in regards to the code and the logic, I have simply followed the tutorial in order to learn. 
 
-Links: 
-[1] https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ
-[2] https://www.youtube.com/watch?v=Oo4ziTddOxs
-[3] https://www.youtube.com/watch?v=B-kxUMHBxNo
+**Links:** <br>
+[1] https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ<br>
+[2] https://www.youtube.com/watch?v=Oo4ziTddOxs<br>
+[3] https://www.youtube.com/watch?v=B-kxUMHBxNo<br>
