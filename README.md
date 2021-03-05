@@ -4,8 +4,8 @@
 1. [Background; includes the literature survey](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/Challenge%20Week/Background.md)
 ---
 2. Aims and Objectives
-    1. Planning in the beginning
-    2. Planning in the MVP
+    1. [Planning in the beginning](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/Challenge%20Week/Plan.md)
+    2. Planning after the MVP
 ---
 3. About the product (utilise all the methods where you link to commits within the code src folders, etc.)
     1. Overview of the tools used
