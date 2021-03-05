@@ -1,9 +1,7 @@
 ### Contents
 
 ---
-1. Background; includes the literature survey
-    1. What's the problem? = talks about what we need in society
-    2. How are you going to solve it?
+1. [Background; includes the literature survey](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/Challenge%20Week/Background.md)
 ---
 2. Aims and Objectives
     1. Planning in the beginning
