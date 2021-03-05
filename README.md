@@ -9,8 +9,8 @@
 ---
 3. About the product (utilise all the methods where you link to commits within the code src folders, etc.)
     1. [Overview of the tools used](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/overview_of_tools.md)
-        1. ReactJS
-        2. Firebase
+        1. [ReactJS](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/reactjs.md)
+        2. [Firebase](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/firebase.md)
     2. Overview of the product = this basically says how everything works together
     3. Functionalities:
         1. Sign in
