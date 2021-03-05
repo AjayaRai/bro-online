@@ -1,3 +1,2 @@
-During the [meeting](https://cseejira.essex.ac.uk/browse/A301309-73), my supervisor and I came to an agreement that I was progressing slower, and that I wasn't able to carry out the plan that was intended in the Challange Week.
-
-So, new plan was crafted. 
+During the [meeting](https://cseejira.essex.ac.uk/browse/A301309-73), my supervisor and I came to an agreement that I was progressing slower, and that I wasn't able to carry out the plan that was intended in the Challenge Week.<br>
+So, new plan was crafted, where the focus was to be placed on the feature rather than the design. My supervisor gave a great example, where a game with good graphic with nothing to do == bad game. On the other hand, game with poor graphics but a lot of things to do can be a good game. 
