@@ -23,21 +23,15 @@ For example, lets say you wanted to create a group. In simplist form, the group 
 
 # Login #
 
-If you are visiting the site for the first time or you haven’t logged in, you will be redirected to the sign up page, if you already signed up then you can click on the link. This will lead you to the login page. Shown below:
+If you are visiting the site for the first time or you haven’t logged in, you will be redirected to the sign up page, if you already signed up then you can click on the link. This will lead you to the login page. Shown below:<br>
+<img src="final_product/technical_documentation/images/login_pg.png" alt="drawing" width="400"/>
 
 Simply enter your credentials, and then you should be able to use the web app with the token feature as described on the signup section.
 
 # Log out #
 
-In order to log out, you can click on the icon shown below:
+In order to log out, you can click on the icon shown on the top right corner:<br>
+<img src="final_product/technical_documentation/images/home_page.png" alt="drawing" width="400"/>
 
 This will delete the token, thus the user can no longer can access the site.
-
-# Messaging #
-
-The purpose of the message on this app is to plan meet ups, and also come to agreement of the regular sessions.
-
-The chat system works as shown on the gif below:
-
-This has been achieved with the help of Firestore and the ReactJS. Firebase has a function where it listens to any changes on the database and once any changes happen, it detects it and send the data to the front end which updates the messages without needing to refresh the page which is thanks to the ReactJS, which updates and renders just the right component when there is a change in data.
 
