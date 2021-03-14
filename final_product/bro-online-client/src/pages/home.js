@@ -56,7 +56,7 @@ class Home extends Component {
                 <Navbar imgUrl={imageUrl}/>
 
                 <div>
-                    <h1>{`My Interests`}</h1>
+                    <h1>{`My Groups`}</h1>
                     {x.length !== 0 ? x : null}
                     <AddInterest />
                 </div>
