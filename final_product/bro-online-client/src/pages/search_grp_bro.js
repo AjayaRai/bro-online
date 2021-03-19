@@ -27,7 +27,6 @@ class search_grp_bro extends Component {
                 this.setState({
                     users: res.data,
                 })
-
             }).catch((err) => {
             console.error(err);
         })

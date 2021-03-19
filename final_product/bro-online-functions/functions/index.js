@@ -256,6 +256,24 @@ app.get('/users', FBAuth, (req, res) => {
     })
 })
 
+app.get('/groups', FBAuth, (req, res) => {
+    const groups = [];
+
+    db
+        .collection('groups')
+        .get()
+        .then((data) => {
+            data.forEach((doc) => {
+                groups.push({
+                    name: doc.data().name,
+                    docId: doc.id
+                })
+            })
+            res.json(groups);
+        }).catch((err) => {
+            console.error(err);
+    })
+})
 
 app.post('/add_member', FBAuth, (req, res) => {
     const docId = req.body.docId;
