@@ -1,3 +1,4 @@
+<a name="a"></a>
 # Adding group members #
 
 Once the client sends the post request from the [frontend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/pages), the code below is triggered:
@@ -16,4 +17,5 @@ Please see the image below to understand this concept better:<br>
 
 The two changes need to take place so that we can keep track of the group members on a given group, and the group member's individaul groups.
 
+<a name="b"></a>
 # Removing group members #
