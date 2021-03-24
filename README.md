@@ -21,7 +21,7 @@
         4. HomePage: 
             1. Add/delete interest
         5. GroupPage: 
-            1. add/remove members
+            1. [add/remove members](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/pages)
             2. Bio
             3. [Chat system](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/message.md)
 ---
