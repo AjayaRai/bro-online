@@ -19,8 +19,3 @@ If you are not familiar with **axios**, then follow the [link](https://cseegit.e
 The code above sends a post request to the server, with the data "userName" and "docId" of the group.
 
 Please click the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process to the server.
-
-Please note that on the backend, two things happen:
-1. Group member collection (table in relational db equivalent) will record the new member
-2. X function will get triggered by the first step. Here we are utilise the firebase function, which helps us to add the group on the new members profile when he/she is added to the group
-Show the imgs of the group member db and the interest which is the person’s profile
