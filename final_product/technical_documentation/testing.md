@@ -18,5 +18,6 @@ To step up the emulator, please follow steps below:
 5. Once you have followed the steps about, you can now type "firebase emulators:start"
 6. You should get this on the terminal: <img src="final_product/technical_documentation/images/firebase_emulator_setup_success.png" alt="drawing" width="400"/>
 
+# Reference #
 https://youtu.be/UDMDpdu5-rE
 
