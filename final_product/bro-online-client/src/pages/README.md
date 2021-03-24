@@ -1,6 +1,6 @@
-<a name="abc">
+<a name="abc"></a>
 # Adding group members #
-</a>
+
 
 On the app, go to the group that you created. Then, click a button which says “Add member” which will lead you to a search page from there you can choose people that you want in your group. After you have chosen a person, it will redirect you to the group page and the chosen person would be added to the group.
 
@@ -22,9 +22,9 @@ The code above sends a post request to the server, with the data "userName" and 
 
 Please click the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process to the server.
 
-<a name="yxz">
+<a name="yxz"></a>
 # Removing group members #
-</a>
+
 
 To remove a group member from the web app, you have to go to the group which has members and click on the “Remove” button.
 
