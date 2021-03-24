@@ -1,4 +1,3 @@
-<a name="abc"></a>
 # Adding group members #
 
 
@@ -22,7 +21,6 @@ The code above sends a post request to the server, with the data "userName" and 
 
 Please click the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process to the server.
 
-<a name="yxz"></a>
 # Removing group members #
 
 
@@ -53,8 +51,6 @@ Main part on the above code is the;
 
 which sends a delete request to the [backend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) (Please follow this link to understand what the backend does with the given request).
 
-[Test](#abc)<br>
-[Test](#yxz)
 
 This firstly removes the member from the groupMember collection on the firestore, see the image below for the destination of the data:
 
