@@ -4,7 +4,7 @@ Once the client sends the post request from the [frontend](https://cseegit.essex
 
     app.post('/add_member', FBAuth, (req, res) => {...}
 
-You can find the full code on the [index.js]().
+You can find the full code on the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
 
 The function above does two things:
 1. Adds the user to the group
