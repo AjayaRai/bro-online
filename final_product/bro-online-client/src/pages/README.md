@@ -16,7 +16,7 @@ On the [AddBtn.js](), you will see the line:<br>
         axios
             .post('/add_member', jsonFormat)
 
-If you are not familiar with **axios**, then follow the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/overview_of_tools.md) to understand it.
+If you are not familiar with **axios**, then follow the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/reactjs.md) to understand it.
 The code above sends a post request to the server, with the data "userName" and "docId" of the group.
 
 Please click the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process to the server.
