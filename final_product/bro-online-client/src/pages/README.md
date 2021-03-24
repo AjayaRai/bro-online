@@ -51,6 +51,7 @@ Main part on the above code is the;
 which sends a delete request to the [backend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) (Please follow this link to understand what the backend does with the given request).
 
 [Test](# Adding group members #)
+[Test](# Removing group members #)
 
 This firstly removes the member from the groupMember collection on the firestore, see the image below for the destination of the data:
 
