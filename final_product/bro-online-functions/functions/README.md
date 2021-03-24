@@ -15,3 +15,5 @@ Please see the image below to understand this concept better:<br>
 <img src="final_product/bro-online-functions/functions/technicalDoc_img/addGroupMem_2.png" alt="drawing" width="400"/><br>
 
 The two changes need to take place so that we can keep track of the group members on a given group, and the group member's individaul groups.
+
+# Removing group members #
