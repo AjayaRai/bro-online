@@ -1,6 +1,6 @@
 The tools that is used for this project include:
 - ReactJS + extension libraries:
-    - [Axios](https://www.npmjs.com/package/axios)
+    - Axios
     - Express Server
     - Material-ui
 - Firebase. Specific features used:
