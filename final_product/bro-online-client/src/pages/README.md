@@ -5,16 +5,20 @@ On the app, go to the group that you created. Then, click a button which says â€
 In order to understand how this happen in the code, please start by looking into the [group.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/pages/group.js), which includes the **AddMember** component that redirects the user to the "localhost.com/group/...document ID.../search". The "document ID" is used to identify the group. On the search page, you will see the **Add** button; in coding prespective search page is the [search.js]() and the **Add** button is the component [AddBtn.js]() which is called from the search.js. 
 The purpose of the search.js is to display all the registered users, and the component AddBtn purpose is to send a post request to the backend.
 
-On the [AddBtn.js](), you will see the line:
-        __let jsonFormat = {
+On the [AddBtn.js](), you will see the line:<br>
+
+        let jsonFormat = {
             userName: userName,
             docId: docId
         }
 
         axios
-            .post('/add_member', jsonFormat)__
+            .post('/add_member', jsonFormat)
+
 If you are not familiar with **axios**, then follow the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/overview_of_tools.md) to understand it.
 The code above sends a post request to the server, with the data "userName" and "docId" of the group.
+
+Please click the [link](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process to the server.
 
 Please note that on the backend, two things happen:
 1. Group member collection (table in relational db equivalent) will record the new member
