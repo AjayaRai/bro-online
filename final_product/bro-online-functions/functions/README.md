@@ -1,3 +1,8 @@
+# Adding Group #
+Once the POST request has been received by the backend the <b>add_interest</b> function is triggered on the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
+
+This function, adds the group to the user who sent the request in the firebase database.
+
 # Adding group members #
 
 Once the client sends the post request from the [frontend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/pages), the code below is triggered:
