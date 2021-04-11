@@ -26,7 +26,7 @@
             3. [Chat system](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/message.md)
 ---
 4. Testing
-    1. [Testing DB](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/testing.md)
+    1. [Testing DB](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-functions/functions/test/db_testing.md)
     2. [Firebase function emulator](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/testing.md)
 ---
 5. Acknowledgement:
