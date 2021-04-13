@@ -52,10 +52,12 @@ Main part on the above code is the;
 which sends a delete request to the [backend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) (Please follow this link to understand what the backend does with the given request).
 
 
-This firstly removes the member from the groupMember collection on the firestore, see the image below for the destination of the data:
+# Search Page #
+You can navigate to the <i>Search Page</i> by clicking the search icon from the navigation bar on the top.
 
+Main logic of the <i>Search Page</i> can be found on the [search_grp_bro.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/pages/search_grp_bro.js), which sends two seperate GET request to the backend; one to retrieve all the users, and another for retrieving all the groups.
 
-The deletion of the member triggers a firebase function (provide link to the explainarion ofthis) “rmvGrpMem” that then goes to the member’s profile collection on the database, then deletes the group from the interest collection which is part of the user data. See below for the path of the data:
+[search_grp_bro.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/pages/search_grp_bro.js) also has a component <i>JoinAgrp</i> which purpose is to display a "Join" button that the user can click so that they can join a group.
 
 
 
