@@ -21,7 +21,7 @@ Image upload functionality hasn’t been completed. But, the parts below has bee
 Please note that the image persist on different website due to the Redux, which has been described in the Redux section.
 Currently, you have to manually upload the image and url to the firebase, if you want to change the personal profile image.
 
-# Add Bio of the group #
+# Editing Bio of the group #
 
 The user can Edit the Bio on the Group Page. To add something to the Bio, simply type and click submit. This will trigger the <i>handleSubmit</i> function in the [BioOfGrp.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/BioOfGrp.js), which sends POST request to the backend with group ID on the URL and along with the text that was written:
 
