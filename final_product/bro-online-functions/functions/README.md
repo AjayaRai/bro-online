@@ -48,7 +48,7 @@ You can find the code for this function on the [index.js](https://cseegit.essex.
 
 This function is triggers automatically when a user is deleted from the group collection. The purpose of the function is to delete the group from the user's record who was removed from the group. The reason why we have to delete two things here is that, if you look into the **Adding group members** section, we created records on two places so when we are removing the user, we need to delete these two records.
 
-# Add Bio of the group #
+# Editing Bio of the group #
 Backend will receive the url path `/group_bio/${this.props.groupDocId}` along with the text that was written and submitted via frontend. 
 
 This will trigger the function:
