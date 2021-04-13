@@ -15,8 +15,9 @@ The <i>handleClick</i> fuction sends a DELETE request to the server along with t
 
 # Image #
 Image upload functionality hasn’t been completed. But, the parts below has been completed:
-- Once a user is signed up “no image” icons is given to the user, which is a url to the firebase storage which already has the image. If we look into the firestore on a newly signed up user we see the url to the “no image” picture, as shown below:
+- Once a user is signed up “no image” icons is given to the user, which is a url to the firebase storage which already has the image. If we look into the firestore on a newly signed up user we see the url to the “no image” picture, as shown below: <br>
+<img src="final_product/bro-online-client/technicalDoc_img/newUser_noImgUrl.png" alt="drawing" width="400"/><br>
 
 Please note that the image persist on different website due to the Redux, which has been described in the Redux section.
-Currently, you have to manually upload the image and url to the firebase, if you want to change the personal profile image
+Currently, you have to manually upload the image and url to the firebase, if you want to change the personal profile image.
 
