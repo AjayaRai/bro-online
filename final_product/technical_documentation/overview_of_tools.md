@@ -48,11 +48,14 @@ Main reason for using Express is that it makes the code neater and easier to und
 E.g.<br>
 
     // without Express
-    exports.helloWord = functions.https.onRequest((req, res) => {
-        res.send('Hello World');
+    exports.helloWord = functions.https.onRequest((request, respond) => {
+        respond.send('Hello World');
     });
 
     // with Express
-    app.post('/', (req, res) => {
-        res.json({'msg': 'Hello World'})
+    app.post('/', (request, respond) => {
+        respond.json({'msg': 'Hello World'})
     })
+
+#### Material-UI ####
+
