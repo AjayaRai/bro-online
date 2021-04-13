@@ -18,9 +18,10 @@
         3. Navigation header
             1. Link to home
             2. [Link to logout](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
+            3. Profile Image
         4. HomePage: 
             1. [Add group](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/addGroups_frontend.md)
-            2. Delete group
+            2. [Delete group](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/README.md)
         5. GroupPage: 
             1. [add/remove members](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/pages)
             2. Bio
