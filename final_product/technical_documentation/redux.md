@@ -3,7 +3,7 @@
 Redux is used so that all the components (similar to objects in OOP) have access to the global variables. For the web-app, following things are set as global:
 - Image of the redux 
 
-Because of the redux, a user’s image avatar is shown on different pages without the need to ask the server each time, the user navigates to the different page.
+Because of the redux, a user’s image avatar is shown on different pages without the need to ask the server each time, the user navigates to the different pages.
 
 ### How does Redux work? ###
 <img src="final_product/technical_documentation/images/redux_diagram.png" alt="drawing" width="400"/> [1]<br>
