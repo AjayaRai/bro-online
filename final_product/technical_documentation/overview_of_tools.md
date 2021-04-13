@@ -40,5 +40,10 @@ Axios is a JavaScript library, which can be used like a module on the ReactJS pr
 
 Main purpose of the Axios is to send the HTTP request from the frontend to the backend.
 
-#### Express Server ####
+#### Express ####
+Express is a framework which has many functionalities. However, for this project only the HTTP request functions are used.
 
+Main reason for using Express is that it makes the code neater and easier to understand.
+
+E.g.
+exports.helloWord = functions.h
