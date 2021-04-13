@@ -45,5 +45,14 @@ Express is a framework which has many functionalities. However, for this project
 
 Main reason for using Express is that it makes the code neater and easier to understand.
 
-E.g.
-exports.helloWord = functions.h
+E.g.<br>
+
+    // without Express
+    exports.helloWord = functions.https.onRequest((req, res) => {
+        res.send('Hello World');
+    });
+
+    // with Express
+    app.post('/', (req, res) => {
+        res.json({'msg': 'Hello World'})
+    })
