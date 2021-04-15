@@ -24,6 +24,7 @@ Tools used for the frontend:
 - ReactJS + extension libraries:
     - Axios
     - Material-ui
+    - Redux
 - Firebase. Specific features used:
     - Authentication
 
@@ -82,6 +83,21 @@ Steps include: [2]
 6. Once the state is changed, all of the application is aware of the state
 
 
-### Reference ###
+<i> Reference </i><br>
 [1] https://www.toptal.com/javascript/immutability-in-javascript-using-redux <br>
 [2] https://www.youtube.com/watch?v=m_u6P5k0vP0 (6:05:16​) Explaination is give on how the Redux works
+
+#### Firebase ####
+Please click [here](https://firebase.google.com/) for the official website 
+
+#### Cloud Firestore ####
+Please click [here](https://material-ui.) for the official website 
+
+#### Cloud Functions ####
+Please click [here](https://material-ui.com/) for the official website
+
+#### Authentication ####
+Please click [here](https://material-ui.com/) for the official website
+
+#### CLoud Storage ####
+Please click [here](https://material-ui.com/) for the official website
