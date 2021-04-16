@@ -91,13 +91,17 @@ Steps include: [2]
 Please click [here](https://firebase.google.com/) for the official website 
 
 #### Cloud Firestore ####
-Please click [here](https://material-ui.) for the official website 
+Please click [here](https://firebase.google.com/docs/firestore) for the official website 
 
 #### Cloud Functions ####
-Please click [here](https://material-ui.com/) for the official website
+Please click [here](https://firebase.google.com/docs/functions) for the official website
 
 #### Authentication ####
-Please click [here](https://material-ui.com/) for the official website
+Please click [here](https://firebase.google.com/docs/auth) for the official website
 
 #### CLoud Storage ####
-Please click [here](https://material-ui.com/) for the official website
+Please click [here](https://firebase.google.com/docs/storage) for the official website
+
+
+
+
