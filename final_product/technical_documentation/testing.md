@@ -1,7 +1,3 @@
-# Testing #
-**Db testing** <br>
-This is used to test if certain code works or not. Show the code and explain what it does AND say how you test it
-
 **Function emulator**<br>
 On the “Adding group member” part, the firebase function has been mentioned  which triggered when something is changed on the database, the issue with these functions is that once a developer has written the code, it then has to be deployed to the firebase server which then creates the function and stored it like so:
 <img src="final_product/technical_documentation/images/firebase_functions.png" alt="drawing" width="400"/>
