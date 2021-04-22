@@ -11,8 +11,8 @@
     1. [Overview of the tools used](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/overview_of_tools.md)
     2. Overview of the product = this basically says how everything works together
     3. Functionalities:
-        1. [Sign in](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
-        2. [Log-in](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
+        1. [Sign Up](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
+        2. [Login](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
         3. Navigation header
             1. [Link to logout](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/signup_login_logout.md)
             2. [Profile Image](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/components)
