@@ -1,7 +1,7 @@
 # Adding a Group #
 Once the POST request has been received by the backend the <b>add_interest</b> function is triggered on the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
 
-This function, adds the group to the user's document and the group's documet in the Firebase.
+This function, adds the group to the user's document and a new group is created on the group document which will have the user ID in the Firebase.
 Two changes need to take place so that we can keep track of the group member's individaul groups, and the group members on a given group.
 
 # Deleting a Group #
