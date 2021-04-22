@@ -19,7 +19,7 @@ The <i>handleClick</i> fuction sends a DELETE request to the server along with t
 <img src="final_product/bro-online-client/technicalDoc_img/newUser_noImgUrl.png" alt="drawing" width="400"/><br>
 
 Please note that the image persist on different website due to the Redux, which has been described in the Redux section.
-Currently, you have to manually upload the image and url to the firebase, if you want to change the personal profile image.
+Currently, if you want to change the personal profile image, you have to manually upload the image and url to the firebase.
 
 # Editing Bio of the group #
 
