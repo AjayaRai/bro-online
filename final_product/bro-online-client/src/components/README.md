@@ -10,7 +10,7 @@ Simply, type the group name and click submit. When you do this, the name of the 
 
 The user must be logged in to delete a group, and it can be done on the home page.
 
-User must have at least one group in order to see the "Delete" button which appears next to the each groups. Once the user presses the delete button <i>handleClick</i> function on the [RmvGroupBtn,js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/RmvGroupBtn.js) is executed.
+User must have at least one group in order to see the "Delete" button which appears next to the each groups. Once the user clicks the delete button <i>handleClick</i> function on the [RmvGroupBtn,js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/RmvGroupBtn.js) is executed.
 The <i>handleClick</i> fuction sends a DELETE request to the server along with the group ID. Please click [here](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process.
 
 # Profile Image #
