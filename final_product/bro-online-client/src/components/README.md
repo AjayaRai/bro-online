@@ -21,13 +21,15 @@ Image upload functionality hasn’t been completed. But, the parts below has bee
 Please note that the image persist on different website due to the Redux, which has been described in the Redux section.
 Currently, you have to manually upload the image and url to the firebase, if you want to change the personal profile image.
 
-# Editing Bio of the group #
+# Bio #
 
 The user can Edit the Bio on the Group Page. To add something to the Bio, simply type and click submit. This will trigger the <i>handleSubmit</i> function in the [BioOfGrp.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/BioOfGrp.js), which sends POST request to the backend with group ID on the URL and along with the text that was written:
 
     axios   
         .post(`/group_bio/${this.props.groupDocId}`, {bio: this.state.value})
 
-Please click [here](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process.
+Note that what was typed just before clicking the Submit button persists, so it is not necessary to check the database and change the Bio on the Frontend. Bio data is pulled from the Firestore only when the page is refreshed.
 
-Note that what was typed just before clicking the Submit button presists, so it is not necessary to check the database and change the Bio on the Frontend. Bio data is pulled from the Firestore when the page is refreshed.
+Please click [here](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-functions/functions) to follow the process in the backend.
+
+
