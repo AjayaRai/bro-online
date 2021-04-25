@@ -1,7 +1,7 @@
 # Adding a Group #
 Once the POST request has been received by the backend the <b>add_interest</b> function is triggered on the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
 
-This function, adds the group to the user's document and the group's documet in the Firebase.
+This function, adds the group to the user's document and a new group is created on the group document which will have the user ID in the Firebase.
 Two changes need to take place so that we can keep track of the group member's individaul groups, and the group members on a given group.
 
 # Deleting a Group #
@@ -13,15 +13,16 @@ This function delete all data in the group document, and once all the data has b
 
 # Adding group members #
 
-Once the client sends the post request from the [frontend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/final_product/bro-online-client/src/pages), the code below is triggered:
+Once the client sends the post request from the [frontend](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-client/src/components/AddBtn.js), the code below is triggered:
 
     app.post('/add_member', FBAuth, (req, res) => {...}
 
-You can find the full code on the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
+You can find the full code in the [index.js](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/edit/master/final_product/bro-online-functions/functions/index.js).
 
 The function above does two things:
 1. Adds the user to the group
 2. Adds the group to the user's collection
+
 Please see the image below to understand this concept better:<br>
 
 <img src="final_product/bro-online-functions/functions/technicalDoc_img/addGroupMem_1.png" alt="drawing" width="400"/><br>
