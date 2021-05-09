@@ -23,7 +23,3 @@
     1. [Testing DB](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/bro-online-functions/functions/test/db_testing.md)
     2. [Firebase function emulator](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/blob/master/final_product/technical_documentation/testing.md)
 ---
-3. Acknowledgement:
-    1. [facebook-clone](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Summer%20preparation/Projects)
-    2. [slack-clone](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Summer%20preparation/Projects)
-    3. [social ape](https://cseegit.essex.ac.uk/ce301_2020/ce301_rai_ajaya/-/tree/master/Challenge%20Week/Project)
