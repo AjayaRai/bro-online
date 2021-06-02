@@ -2,7 +2,7 @@
 University Of Essex, Final Year Project <br/>
 Web Application: Social Networking<br/>
 
-Please see the [abstract and poster](https://github.com/AjayaRai/bro_online/tree/main/abstract_and_poster) for more detail of the Project.
+Please see the [abstract and poster](https://github.com/AjayaRai/bro-online/tree/master/abstract_and_poster) for more detail about the Project.
 
 ### Contents
 
