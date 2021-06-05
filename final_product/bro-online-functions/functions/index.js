@@ -1,48 +1,11 @@
 const functions = require('firebase-functions');
 const app = require('express')();
-const {db, admin} = require('./util/admin');
+const FBAuth = require('./util/fbAuth');
+const {db} = require('./util/admin');
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBjMhI9UDp4RWf7tdeRf7dCwgZBMBVJh6E",
-    authDomain: "bro-online.firebaseapp.com",
-    databaseURL: "https://bro-online.firebaseio.com",
-    projectId: "bro-online",
-    storageBucket: "bro-online.appspot.com",
-    messagingSenderId: "56379473014",
-    appId: "1:56379473014:web:4719ca15086333f9277357",
-    measurementId: "G-YEE82L7D40"
-};
-
+const config = require("./util/config");
 const firebase = require('firebase');
-firebase.initializeApp(firebaseConfig);
-
-// FBAuth == Firebase Auth
-const FBAuth = (req, res, next) => {
-    let idToken;
-    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
-        idToken = req.headers.authorization.split('Bearer ')[1];
-    } else {
-        console.error('No token found');
-        return res.status(403).json({error: 'Unauthorized'});
-    }
-
-    admin.auth().verifyIdToken(idToken)
-        .then((decodedToken) => {
-            req.user = decodedToken;
-            return db.collection('users')
-                .where('userId', '==', req.user.uid)
-                .limit(1)
-                .get();
-        })
-        .then((data) => {
-            req.user.userName = data.docs[0].data().userName;
-            return next();
-        })
-        .catch((err) => {
-            console.error('Error while verifying token ', err);
-            return res.status(403).json(err);
-        })
-}
+firebase.initializeApp(config);
 
 app.get('/groups/:docId', FBAuth, (req, res) => {
     let groupMembers = [];
