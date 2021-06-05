@@ -28,7 +28,7 @@ app.post('/login', login);
 app.get('/user', FBAuth, getUserDetails)
 app.get('/users', FBAuth, getUsers);
 
-app.get('/get_interest', FBAuth, getUserGroups)
+app.get('/get_my_grps', FBAuth, getUserGroups)
 app.post('/add_interest', FBAuth, addGroup);
 app.delete('/group/:groupId', FBAuth, deleteGroup)
 app.get('/groups/:docId', FBAuth, getAgroup)

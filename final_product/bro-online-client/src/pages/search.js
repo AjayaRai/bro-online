@@ -4,14 +4,11 @@ import AddBtn from "../components/AddBtn";
 import Navbar from "../components/Navbar";
 
 class Group extends Component {
-
-
     state = {
         users: null
     }
 
     componentDidMount() {
-
         axios
             .get(`/users`)
             .then((res) => {

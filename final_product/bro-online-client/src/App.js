@@ -4,10 +4,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import jwtDecode from 'jwt-decode';
 import axios from "axios";
 
-// Redux
-import {Provider} from 'react-redux';
-import store from './redux/store';
-
 // Components
 import AuthRoute from './util/AuthRoute';
 
@@ -22,7 +18,8 @@ import search from "./pages/search";
 import {SET_AUTHENTICATED} from "./redux/types";
 import { logoutUser, getUserData } from './redux/actions/userActions';
 import search_grp_bro from "./pages/search_grp_bro";
-
+import {Provider} from 'react-redux';
+import store from './redux/store';
 
 const token = localStorage.FBIdToken;
 if (token) {

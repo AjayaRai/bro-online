@@ -9,15 +9,15 @@ import RmvGroupBtn from "../components/RmvGroupBtn";
 
 class Home extends Component {
     state = {
-        schema: [],
+        groups: [],
     }
 
     componentDidMount() {
         axios
-            .get('/get_interest')
+            .get('/get_my_grps')
             .then((res) => {
                 this.setState({
-                    schema: res.data
+                    groups: res.data
                 })
             }).catch((err) => {
             console.error(err);
@@ -36,16 +36,16 @@ class Home extends Component {
             return <Redirect to={`/signup`} />
         }
 
-        let schema = this.state.schema;
-        let x = [];
-        if (schema.length !== 0) {
-            for (let i=0; i<schema.length; i++) {
-                x[i] = (
+        let groups = this.state.groups;
+        let grpsFormattedInHTML = [];
+        if (groups.length !== 0) {
+            for (let i=0; i < groups.length; i++) {
+                grpsFormattedInHTML[i] = (
                     <p>
-                        <Link to={`/group/${schema[i].docId}`}>
-                            {schema[i].name}
+                        <Link to={`/group/${groups[i].docId}`}>
+                            {groups[i].name}
                         </Link>
-                        <RmvGroupBtn groupDocId={schema[i].docId} />
+                        <RmvGroupBtn groupDocId={groups[i].docId} />
                     </p>
                 );
             }
@@ -57,7 +57,7 @@ class Home extends Component {
 
                 <div>
                     <h1>{`My Groups`}</h1>
-                    {x.length !== 0 ? x : null}
+                    {grpsFormattedInHTML.length !== 0 ? grpsFormattedInHTML : null}
                     <AddInterest />
                 </div>
             </>

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Tribe from "../components/Tribe";
-import AddMember from "../components/AddMember";
 import Navbar from "../components/Navbar";
 import BioOfGrp from "../components/BioOfGrp";
 import Chat from "../components/Chat";
 import {connect} from "react-redux";
+import {Link} from "react-router-dom";
 
 class Group extends Component {
     constructor(props) {
@@ -50,7 +50,9 @@ class Group extends Component {
                 <Navbar imgUrl={imageUrl}/>
                 <div>
                     <Tribe groupMembers={this.state.groupMembers ? this.state.groupMembers : null}/>
-                    <AddMember docId={this.props.match.params.docId}/>
+                    <Link to={`/group/${this.props.match.params.docId}/search`}>
+                        Add Member
+                    </Link>
                 </div>
 
                 <br/>
