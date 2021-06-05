@@ -9,7 +9,7 @@ const initialState = {
     credentials: {}
 };
 
-export default function(state = initialState, action) {
+export default function userReducer(state = initialState, action) {
     switch (action.type) {
         case SET_AUTHENTICATED:
             return {
