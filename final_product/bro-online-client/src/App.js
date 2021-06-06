@@ -2,9 +2,11 @@ import React, {Component} from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import jwtDecode from 'jwt-decode';
 import axios from "axios";
+import './App.css';
 
 // Components
 import AuthRoute from './util/AuthRoute';
+import Navbar from "./components/Navbar";
 
 // Pages
 import group from "./pages/group";
@@ -38,14 +40,17 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <Router>
-                    <Switch>
-                        <Route exact path={`/group/:docId`} component={group}/>
-                        <Route exact path={`/`} component={home}/>
-                        <Route exact path={`/group/:docId/search`} component={search}/>
-                        <Route exact path={`/search_grp_bro`} component={search_grp_bro}/>
-                        <AuthRoute exact path={`/login`} component={login} />
-                        <AuthRoute exact path="/signup" component={signup} />
-                    </Switch>
+                    <Navbar />
+                    <div className={`container`}>
+                        <Switch>
+                            <Route exact path={`/group/:docId`} component={group}/>
+                            <Route exact path={`/`} component={home}/>
+                            <Route exact path={`/group/:docId/search`} component={search}/>
+                            <Route exact path={`/search_grp_bro`} component={search_grp_bro}/>
+                            <AuthRoute exact path={`/login`} component={login} />
+                            <AuthRoute exact path="/signup" component={signup} />
+                        </Switch>
+                    </div>
                 </Router>
             </Provider>
         )
