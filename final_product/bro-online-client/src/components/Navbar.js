@@ -5,6 +5,7 @@ import Avatar from "@material-ui/core/Avatar";
 import SearchIcon from '@material-ui/icons/Search';
 import {logoutUser} from "../redux/actions/userActions";
 import {connect} from 'react-redux';
+import '../App.css';
 
 // MUI stuff
 import AppBar from '@material-ui/core/AppBar';
@@ -20,7 +21,7 @@ class Navbar extends Component {
     render() {
         return (
             <AppBar>
-                <Toolbar>
+                <Toolbar className={`nav-container`}>
                     <Avatar src={"https://firebasestorage.googleapis.com/v0/b/bro-online-test.appspot.com/o/jack.jpg?alt=media"}
                     />
                     <Button color="inherit" component={Link} to={`/`}>
