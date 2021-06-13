@@ -12,7 +12,9 @@ class AddBtn extends Component {
         let userName = this.props.userName;
         let docId = this.extractDocIdFromURL(window.location.pathname);
 
-        this.state.docId.setState(docId);
+        this.setState({
+            docId: docId
+        })
 
         let jsonFormat = {
             userName: userName,
