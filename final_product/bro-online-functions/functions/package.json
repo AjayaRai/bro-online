@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": "14"
+    "node": "12"
   },
   "main": "index.js",
   "dependencies": {
