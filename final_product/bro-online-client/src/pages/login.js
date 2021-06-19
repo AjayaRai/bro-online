@@ -3,6 +3,17 @@ import { connect } from 'react-redux';
 import { loginUser } from '../redux/actions/userActions';
 import {Link} from "react-router-dom";
 
+// MUI Stuff
+import withStyles from '@material-ui/core/styles/withStyles';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import {TextField} from "@material-ui/core";
+import Button from '@material-ui/core/Button';
+
+const styles = (theme) => ({
+    ...theme.spreadThis
+})
+
 class login extends Component {
     constructor() {
         super();
@@ -26,20 +37,50 @@ class login extends Component {
     };
 
     render() {
+        const {
+            classes
+        } = this.props;
         return (
-            <div>
-                <h1>Login Page</h1>
-
-                <form onSubmit={this.handleSubmit}>
-                    <input id={`email`} name={`email`} type={`text`} value={this.state.email} onChange={this.handleChange}/>
-                    <input id={`password`} name={`password`} type={`text`} value={this.state.password} onChange={this.handleChange}/>
-
-                    <input type={`submit`} value={`Login`}/>
-                    <br/>
+            <Grid container className={classes.form}>
+                <Grid item sm />
+                <Grid>
+                    <Typography variant="h2" className={classes.pageTitle}>
+                        Login
+                    </Typography>
+                    <form noValidate onSubmit={this.handleSubmit}>
+                        <TextField
+                            id={`email`}
+                            name={`email`}
+                            type={`email`}
+                            label={`Email`}
+                            className={classes.textField}
+                            value={this.state.email}
+                            onChange={this.handleChange}
+                            fullWidth
+                        />
+                        <TextField
+                            id={`password`}
+                            name={`password`}
+                            type={`password`}
+                            label={`Password`}
+                            className={classes.textField}
+                            value={this.state.password}
+                            onChange={this.handleChange}
+                            fullWidth
+                        />
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            color="primary"
+                            className={classes.button}
+                        >
+                            Login
+                        </Button>
+                    </form>
                     Not registered? <Link to={`/signup`}>click here</Link>
-                </form>
-
-            </div>
+                </Grid>
+                <Grid item sm />
+            </Grid>
         );
     }
 }
@@ -52,4 +93,4 @@ const mapActionsToProps = {
     loginUser
 }
 
-export default connect(mapStateToProps, mapActionsToProps)(login);
+export default connect(mapStateToProps, mapActionsToProps)(withStyles(styles)(login));
