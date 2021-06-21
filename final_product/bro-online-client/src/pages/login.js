@@ -77,7 +77,9 @@ class login extends Component {
                             Login
                         </Button>
                     </form>
+                    <small>
                     Not registered? <Link to={`/signup`}>click here</Link>
+                    </small>
                 </Grid>
                 <Grid item sm />
             </Grid>
