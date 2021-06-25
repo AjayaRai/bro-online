@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import AddBtn from "../components/AddBtn";
 import Navbar from "../components/Navbar";
+import './search.css';
+
+// Material UI stuff
+import withStyles from '@material-ui/core/styles/withStyles';
+import Avatar from "@material-ui/core/Avatar";
+
+const styles = (theme) => ({
+})
 
 class Group extends Component {
     state = {
@@ -22,9 +30,15 @@ class Group extends Component {
     }
 
     render() {
+        const {
+            classes
+        } = this.props;
+
         let user = this.state.users ? (
             this.state.users.map(user =>
-                <p>{user.name} <AddBtn userName={user.userName}/></p>
+                <div className={`inlineUsrDetail`}>
+                    <p><Avatar style={{float:"left"}} src={"https://firebasestorage.googleapis.com/v0/b/bro-online-test.appspot.com/o/jack.jpg?alt=media"} />{user.name} <AddBtn userName={user.userName} /></p>
+                </div>
             )
         ) : <p></p>;
         return (
@@ -39,4 +53,4 @@ class Group extends Component {
     }
 }
 
-export default Group;
+export default withStyles(styles)(Group);
