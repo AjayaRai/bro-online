@@ -13,7 +13,8 @@ import GroupMem from "../components/GroupMem";
 const styles = (theme) => ({
     addMem_bio_chat: {
         position: 'absolute',
-        top: '30em'
+        top: '30em',
+        width: '97%'
     },
     ...theme.spreadThis
 })
