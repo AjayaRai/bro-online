@@ -14,13 +14,13 @@ class AddInterest extends Component {
         this.setState({value: event.target.value});
     }
 
-    handleSubmit(event) {
-        const x = {
+    handleSubmit() {
+        const nameInJsonFormat = {
             name: this.state.value
         }
 
         axios
-            .post('/add_interest', x)
+            .post('/add_interest', nameInJsonFormat)
             .catch((err) => {
                 console.error(err);
             })

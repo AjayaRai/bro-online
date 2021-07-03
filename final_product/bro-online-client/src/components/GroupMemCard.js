@@ -22,7 +22,7 @@ const styles = (theme) => ({
     ...theme.spreadThis
 })
 
-class GroupMem extends Component {
+class GroupMemCard extends Component {
     render() {
         const {
             classes,
@@ -48,4 +48,4 @@ class GroupMem extends Component {
     }
 }
 
-export default (withStyles(styles)(GroupMem));
+export default (withStyles(styles)(GroupMemCard));

@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 
 // Material UI stuff
 import withStyles from '@material-ui/core/styles/withStyles';
-import GroupMem from "../components/GroupMem";
+import GroupMem from "../components/GroupMemCard";
 
 const styles = (theme) => ({
     addMem_bio_chat: {
