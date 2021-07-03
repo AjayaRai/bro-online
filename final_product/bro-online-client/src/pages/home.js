@@ -6,6 +6,22 @@ import AddInterest from "../components/AddInterest";
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import RmvGroupBtn from "../components/RmvGroupBtn";
+import Image from "../util/homePage_wallpaper.jpg";
+
+// MUI stuff
+import withStyles from '@material-ui/core/styles/withStyles';
+
+const styles = (theme) => ({
+    groupBackground: {
+        height: `35em`,
+        backgroundImage: `url(${Image})`,
+        closeButton: {
+            position: 'absolute',
+            left: '91%',
+            top: '6%'
+        }
+    }
+})
 
 class Home extends Component {
     state = {
@@ -29,7 +45,8 @@ class Home extends Component {
             user: {
                 authenticated,
                 credentials: { imageUrl },
-            }
+            },
+            classes
         } = this.props;
 
         if (!authenticated) {
@@ -55,7 +72,7 @@ class Home extends Component {
             <>
                 <Navbar imgUrl={imageUrl}/>
 
-                <div>
+                <div className={classes.groupBackground}>
                     <h1>{`My Groups`}</h1>
                     {grpsFormattedInHTML.length !== 0 ? grpsFormattedInHTML : null}
                     <AddInterest />
@@ -69,6 +86,4 @@ const mapStateToProps = (state) => ({
     user: state.user
 })
 
-export default connect(
-    mapStateToProps,
-)(Home);
+export default connect(mapStateToProps)(withStyles(styles)(Home));
