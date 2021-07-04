@@ -10,6 +10,8 @@ import AddGroup from "../components/AddGroup";
 
 // MUI stuff
 import withStyles from '@material-ui/core/styles/withStyles';
+import Card from "@material-ui/core/Card";
+import CardHeader from "@material-ui/core/CardHeader";
 
 const styles = (theme) => ({
     groupBackground: {
@@ -56,14 +58,26 @@ class Home extends Component {
 
         let groups = this.state.groups;
         let grpsFormattedInHTML = [];
+
         if (groups.length !== 0) {
             for (let i=0; i < groups.length; i++) {
                 grpsFormattedInHTML[i] = (
                     <p>
-                        <Link to={`/group/${groups[i].docId}`}>
-                            {groups[i].name}
-                        </Link>
-                        <RmvGroupBtn groupDocId={groups[i].docId} />
+
+                        <Card
+                            style={{
+                                position: 'absolute',
+                                top: `${10 + i * 10}` + 'em',
+                                left: '100px',
+                                width: '100px',
+                                height: '100px'
+                            }}
+                        >
+                            <Link to={`/group/${groups[i].docId}`}>
+                                <CardHeader title={groups[i].name} />
+                            </Link>
+                            <RmvGroupBtn groupDocId={groups[i].docId} />
+                        </Card>
                     </p>
                 );
             }
