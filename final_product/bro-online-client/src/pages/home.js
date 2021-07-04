@@ -1,17 +1,14 @@
 import React, {Component} from 'react';
 import axios from "axios";
 import { connect } from 'react-redux';
-import {Link} from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import RmvGroupBtn from "../components/RmvGroupBtn";
 import Image from "../util/homePage_wallpaper.jpg";
 import AddGroup from "../components/AddGroup";
 
 // MUI stuff
 import withStyles from '@material-ui/core/styles/withStyles';
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
+import GroupCard from "../components/GroupCard";
 
 const styles = (theme) => ({
     groupBackground: {
@@ -62,23 +59,7 @@ class Home extends Component {
         if (groups.length !== 0) {
             for (let i=0; i < groups.length; i++) {
                 grpsFormattedInHTML[i] = (
-                    <p>
-
-                        <Card
-                            style={{
-                                position: 'absolute',
-                                top: `${10 + i * 10}` + 'em',
-                                left: '100px',
-                                width: '100px',
-                                height: '100px'
-                            }}
-                        >
-                            <Link to={`/group/${groups[i].docId}`}>
-                                <CardHeader title={groups[i].name} />
-                            </Link>
-                            <RmvGroupBtn groupDocId={groups[i].docId} />
-                        </Card>
-                    </p>
+                    <GroupCard groupId={groups[i].docId} groupName={groups[i].name} cardLocation_yAxis={i} />
                 );
             }
         }
