@@ -3,7 +3,6 @@ import axios from "axios";
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import Image from "../util/homePage_wallpaper.jpg";
 import AddGroup_location1 from "../components/AddGroup_location1";
 import AddGroup_location_2 from "../components/AddGroup_location_2";
 
@@ -13,15 +12,6 @@ import GroupCard_1 from "../components/GroupCard_1";
 import GroupCard_2 from "../components/GroupCard_2";
 
 const styles = (theme) => ({
-    groupBackground: {
-        height: `35em`,
-        backgroundImage: `url(${Image})`,
-        closeButton: {
-            position: 'absolute',
-            left: '91%',
-            top: '6%'
-        }
-    },
     ...theme.spreadThis
 })
 
