@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Material UI
 import withStyles from '@material-ui/core/styles/withStyles';
-import AddIcon from "@material-ui/icons/Add";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import {Dialog} from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -26,10 +26,14 @@ const styles = (theme) => ({
     ...theme.spreadThis
 })
 
-class AddGroup extends Component {
-    state = {
-        open: false,
-        body: ''
+class AddGroup_location1 extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            open: false,
+            body: ''
+        }
     }
 
     handleOpen = () => {
@@ -44,13 +48,14 @@ class AddGroup extends Component {
         this.setState({[event.target.name]: event.target.value});
     };
 
-    handleSubmit = (event) => {
-        const x = {
-            name: this.state.body
+    handleSubmit = () => {
+        const jsonFormatData = {
+            name: this.state.body,
+            cardLocation: this.props.cardLocation
         }
 
         axios
-            .post('/add_interest', x)
+            .post('/add_interest', jsonFormatData)
             .catch((err) => {
                 console.error(err);
             })
@@ -64,7 +69,9 @@ class AddGroup extends Component {
         return (
             <Fragment>
                 <MyButton onClick={this.handleOpen} tip="Add a group">
-                    <AddIcon/>
+                    <AddCircleIcon
+                        style={{fill: 'white'}}
+                    />
                 </MyButton>
                 <Dialog
                     open={this.state.open}
@@ -87,7 +94,7 @@ class AddGroup extends Component {
                                 type="text"
                                 label="Group Name"
                                 multiline
-                                rows="3"
+                                rows="1"
                                 placeholder="Name your group"
                                 className={classes.textField}
                                 onChange={this.handleChange}
@@ -109,4 +116,4 @@ class AddGroup extends Component {
     }
 }
 
-export default (withStyles(styles)(AddGroup));
+export default (withStyles(styles)(AddGroup_location1));

@@ -6,12 +6,12 @@ import RmvGroupBtn from "./RmvGroupBtn";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 
-class GroupCard extends Component {
+class GroupCard_2 extends Component {
     render() {
         const {
             groupId,
             groupName,
-            cardLocation_yAxis
+            groupCard_yAxis
         } = this.props;
 
         return (
@@ -19,7 +19,7 @@ class GroupCard extends Component {
                 <Card
                     style={{
                         position: 'absolute',
-                        top: `${10 + cardLocation_yAxis * 10}` + 'em',
+                        top:  `${groupCard_yAxis}` + 'em',
                         left: '100px',
                         width: '100px',
                         height: '100px'
@@ -35,4 +35,4 @@ class GroupCard extends Component {
     }
 }
 
-export default GroupCard;
+export default GroupCard_2;

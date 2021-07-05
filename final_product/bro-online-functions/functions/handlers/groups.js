@@ -52,7 +52,8 @@ exports.getUserGroups = (req, res) => {
             data.forEach((doc) => {
                 let schema = {
                     name: doc.data().name,
-                    docId: doc.id
+                    docId: doc.id,
+                    cardLocation: doc.data().cardLocation
                 }
 
                 interests.push(schema);
@@ -67,7 +68,8 @@ exports.getUserGroups = (req, res) => {
 exports.addGroup = (req, res) => {
     const userName = req.user.userName;
     const newInterest = {
-        name: req.body.name
+        name: req.body.name,
+        cardLocation: req.body.cardLocation
     }
     let docId;
 
