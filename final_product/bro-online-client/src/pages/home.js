@@ -56,46 +56,44 @@ class Home extends Component {
         }
 
         let groups = this.state.groups;
-        let updatedGroupArray = [];
-        groups.sort(this.compare)
-
-        for (let i=0; i<2; i++) {
-            updatedGroupArray[i] = null;
-            for (let j=0; j<groups.length; j++) {
-                if (i === groups[j].cardLocation) {
-                    updatedGroupArray[i] = groups[j];
-                }
-            }
-        }
-
         let grpsFormattedInHTML = [];
 
-        if (updatedGroupArray[0] === null) {
+        if (groups.length !== 0) {
+            if (groups[0] === null) {
+                grpsFormattedInHTML[0] = (
+                    <AddIcon_location_1 cardLocation={0}/>
+                )
+            } else {
+                grpsFormattedInHTML[0] = (
+                    <GroupCard_1
+                        groupId={groups[0].docId}
+                        groupName={groups[0].name}
+                        groupCard_yAxis={10}
+                    />
+                )
+            }
+
+            if (groups[1] === null) {
+                grpsFormattedInHTML[1] = (
+                    <AddGroup_location_2 cardLocation={1}/>
+                )
+            } else {
+                grpsFormattedInHTML[1] = (
+                    <GroupCard_2
+                        groupId={groups[1].docId}
+                        groupName={groups[1].name}
+                        groupCard_yAxis={20}
+                    />
+                )
+            }
+        } else {
             grpsFormattedInHTML[0] = (
                 <AddIcon_location_1 cardLocation={0}/>
-            )
-        } else {
-            grpsFormattedInHTML[0] = (
-                <GroupCard_1
-                    groupId={updatedGroupArray[0].docId}
-                    groupName={updatedGroupArray[0].name}
-                    groupCard_yAxis={10}
-                />
-            )
-        }
+            );
 
-        if (updatedGroupArray[1] === null) {
             grpsFormattedInHTML[1] = (
                 <AddGroup_location_2 cardLocation={1}/>
-            )
-        } else {
-            grpsFormattedInHTML[1] = (
-                <GroupCard_2
-                    groupId={updatedGroupArray[1].docId}
-                    groupName={updatedGroupArray[1].name}
-                    groupCard_yAxis={20}
-                />
-            )
+            );
         }
 
         return (

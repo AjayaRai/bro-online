@@ -59,10 +59,32 @@ exports.getUserGroups = (req, res) => {
                 interests.push(schema);
             });
 
-            return res.json(interests);
+            let updatedMyGrpArray = [];
+            interests.sort(compare);
+
+            for (let i=0; i<2; i++) {
+                updatedMyGrpArray[i] = null;
+                for (let j=0; j<interests.length; j++) {
+                    if (i === interests[j].cardLocation) {
+                        updatedMyGrpArray[i] = interests[j];
+                    }
+                }
+            }
+
+            return res.json(updatedMyGrpArray);
         }).catch((err) => {
         console.error(err);
     })
+}
+
+function compare ( a, b ) {
+    if ( a.cardLocation < b.cardLocation ){
+        return -1;
+    }
+    if ( a.cardLocation > b.cardLocation ){
+        return 1;
+    }
+    return 0;
 }
 
 exports.addGroup = (req, res) => {
