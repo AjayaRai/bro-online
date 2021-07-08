@@ -3,8 +3,8 @@ import axios from "axios";
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import AddGroup_location1 from "../components/AddGroup_location1";
-import AddGroup_location_2 from "../components/AddGroup_location_2";
+import AddIcon_location_1 from "../components/AddIcon_location_1";
+import AddGroup_location_2 from "../components/AddIcon_location_2";
 
 // MUI stuff
 import withStyles from '@material-ui/core/styles/withStyles';
@@ -72,17 +72,7 @@ class Home extends Component {
 
         if (updatedGroupArray[0] === null) {
             grpsFormattedInHTML[0] = (
-                <div
-                    style={{
-                        position: 'absolute',
-                        top:  `10` + 'em',
-                        left: '100px',
-                        width: '100px',
-                        height: '100px'
-                    }}
-                >
-                    <AddGroup_location1 cardLocation={0}/>
-                </div>
+                <AddIcon_location_1 cardLocation={0}/>
             )
         } else {
             grpsFormattedInHTML[0] = (
@@ -96,17 +86,7 @@ class Home extends Component {
 
         if (updatedGroupArray[1] === null) {
             grpsFormattedInHTML[1] = (
-                <div
-                    style={{
-                        position: 'absolute',
-                        top:  `20` + 'em',
-                        left: '100px',
-                        width: '100px',
-                        height: '100px'
-                    }}
-                >
-                    <AddGroup_location_2 cardLocation={1}/>
-                </div>
+                <AddGroup_location_2 cardLocation={1}/>
             )
         } else {
             grpsFormattedInHTML[1] = (
