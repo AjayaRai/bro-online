@@ -4,12 +4,16 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import AddIcon_location_1 from "../components/AddIcon_location_1";
-import AddGroup_location_2 from "../components/AddIcon_location_2";
+import AddIcon_location_2 from "../components/AddIcon_location_2";
+import AddIcon_location_3 from "../components/AddIcon_location_3";
+import AddIcon_location_4 from "../components/AddIcon_location_4";
 
 // MUI stuff
 import withStyles from '@material-ui/core/styles/withStyles';
 import GroupCard_1 from "../components/GroupCard_1";
 import GroupCard_2 from "../components/GroupCard_2";
+import GroupCard_3 from "../components/GroupCard_3";
+import GroupCard_4 from "../components/GroupCard_4";
 
 const styles = (theme) => ({
     ...theme.spreadThis
@@ -75,7 +79,7 @@ class Home extends Component {
 
             if (groups[1] === null) {
                 grpsFormattedInHTML[1] = (
-                    <AddGroup_location_2 cardLocation={1}/>
+                    <AddIcon_location_2 cardLocation={1}/>
                 )
             } else {
                 grpsFormattedInHTML[1] = (
@@ -86,13 +90,49 @@ class Home extends Component {
                     />
                 )
             }
+
+            if (groups[2] === null) {
+                grpsFormattedInHTML[2] = (
+                    <AddIcon_location_3 cardLocation={2}/>
+                )
+            } else {
+                grpsFormattedInHTML[2] = (
+                    <GroupCard_3
+                        groupId={groups[2].docId}
+                        groupName={groups[2].name}
+                        groupCard_yAxis={30}
+                    />
+                )
+            }
+
+            if (groups[3] === null) {
+                grpsFormattedInHTML[3] = (
+                    <AddIcon_location_4 cardLocation={3}/>
+                )
+            } else {
+                grpsFormattedInHTML[3] = (
+                    <GroupCard_4
+                        groupId={groups[3].docId}
+                        groupName={groups[3].name}
+                        groupCard_yAxis={40}
+                    />
+                )
+            }
         } else {
             grpsFormattedInHTML[0] = (
                 <AddIcon_location_1 cardLocation={0}/>
             );
 
             grpsFormattedInHTML[1] = (
-                <AddGroup_location_2 cardLocation={1}/>
+                <AddIcon_location_2 cardLocation={1}/>
+            );
+
+            grpsFormattedInHTML[2] = (
+                <AddIcon_location_3 cardLocation={2}/>
+            );
+
+            grpsFormattedInHTML[3] = (
+                <AddIcon_location_4 cardLocation={3}/>
             );
         }
 

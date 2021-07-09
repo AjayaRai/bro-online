@@ -62,7 +62,7 @@ exports.getUserGroups = (req, res) => {
             let updatedMyGrpArray = [];
             interests.sort(compare);
 
-            for (let i=0; i<2; i++) {
+            for (let i=0; i<4; i++) {
                 updatedMyGrpArray[i] = null;
                 for (let j=0; j<interests.length; j++) {
                     if (i === interests[j].cardLocation) {
