@@ -61,13 +61,14 @@ class Home extends Component {
 
         let groups = this.state.groups;
         let grpsFormattedInHTML = [];
-        console.log("groups", groups);
+
         if (groups.length !== 0) {
             if (groups[0] === null) {
                 grpsFormattedInHTML[0] = (
                     <AddIcon_location_1
                         cardLocation={0}
                         yAxis={10}
+                        xAxis={10}
                     />
                 )
             } else {
@@ -76,6 +77,7 @@ class Home extends Component {
                         groupId={groups[0].docId}
                         groupName={groups[0].name}
                         groupCard_yAxis={10}
+                        xAxis={10}
                     />
                 )
             }
@@ -85,6 +87,7 @@ class Home extends Component {
                     <AddIcon_location_2
                         cardLocation={1}
                         yAxis={20}
+                        xAxis={10}
                     />
                 )
             } else {
@@ -93,6 +96,7 @@ class Home extends Component {
                         groupId={groups[1].docId}
                         groupName={groups[1].name}
                         groupCard_yAxis={20}
+                        xAxis={10}
                     />
                 )
             }
@@ -101,7 +105,8 @@ class Home extends Component {
                 grpsFormattedInHTML[2] = (
                     <AddIcon_location_3
                         cardLocation={2}
-                        groupCard_yAxis={30}
+                        yAxis={10}
+                        xAxis={30}
                     />
                 )
             } else {
@@ -109,7 +114,8 @@ class Home extends Component {
                     <GroupCard_3
                         groupId={groups[2].docId}
                         groupName={groups[2].name}
-                        groupCard_yAxis={30}
+                        groupCard_yAxis={10}
+                        xAxis={30}
                     />
                 )
             }
@@ -118,7 +124,8 @@ class Home extends Component {
                 grpsFormattedInHTML[3] = (
                     <AddIcon_location_4
                         cardLocation={3}
-                        yAxis={40}
+                        yAxis={20}
+                        xAxis={30}
                     />
                 )
             } else {
@@ -126,7 +133,8 @@ class Home extends Component {
                     <GroupCard_4
                         groupId={groups[3].docId}
                         groupName={groups[3].name}
-                        groupCard_yAxis={40}
+                        groupCard_yAxis={20}
+                        xAxis={30}
                     />
                 )
             }

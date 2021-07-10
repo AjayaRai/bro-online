@@ -64,15 +64,16 @@ class AddIcon_location_1 extends Component {
     render() {
         const {
             classes,
-            yAxis
+            groupCard_yAxis,
+            xAxis
         } = this.props;
 
         return (
             <div
                 style={{
                     position: 'absolute',
-                    top:  `${yAxis}` + 'em',
-                    left: '100px',
+                    top:  `${groupCard_yAxis}` + 'em',
+                    left: `${xAxis}` + 'em',
                     width: '100px',
                     height: '100px'
                 }}

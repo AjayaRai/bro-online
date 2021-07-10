@@ -11,7 +11,8 @@ class GroupCard_1 extends Component {
         const {
             groupId,
             groupName,
-            groupCard_yAxis
+            groupCard_yAxis,
+            xAxis
         } = this.props;
 
         return (
@@ -20,7 +21,7 @@ class GroupCard_1 extends Component {
                     style={{
                         position: 'absolute',
                         top:  `${groupCard_yAxis}` + 'em',
-                        left: '100px',
+                        left: `${xAxis}` + 'em',
                         width: '100px',
                         height: '100px'
                     }}
