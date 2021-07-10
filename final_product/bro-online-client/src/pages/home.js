@@ -61,11 +61,14 @@ class Home extends Component {
 
         let groups = this.state.groups;
         let grpsFormattedInHTML = [];
-
+        console.log("groups", groups);
         if (groups.length !== 0) {
             if (groups[0] === null) {
                 grpsFormattedInHTML[0] = (
-                    <AddIcon_location_1 cardLocation={0}/>
+                    <AddIcon_location_1
+                        cardLocation={0}
+                        yAxis={10}
+                    />
                 )
             } else {
                 grpsFormattedInHTML[0] = (
@@ -79,7 +82,10 @@ class Home extends Component {
 
             if (groups[1] === null) {
                 grpsFormattedInHTML[1] = (
-                    <AddIcon_location_2 cardLocation={1}/>
+                    <AddIcon_location_2
+                        cardLocation={1}
+                        yAxis={20}
+                    />
                 )
             } else {
                 grpsFormattedInHTML[1] = (
@@ -93,7 +99,10 @@ class Home extends Component {
 
             if (groups[2] === null) {
                 grpsFormattedInHTML[2] = (
-                    <AddIcon_location_3 cardLocation={2}/>
+                    <AddIcon_location_3
+                        cardLocation={2}
+                        groupCard_yAxis={30}
+                    />
                 )
             } else {
                 grpsFormattedInHTML[2] = (
@@ -107,7 +116,10 @@ class Home extends Component {
 
             if (groups[3] === null) {
                 grpsFormattedInHTML[3] = (
-                    <AddIcon_location_4 cardLocation={3}/>
+                    <AddIcon_location_4
+                        cardLocation={3}
+                        yAxis={40}
+                    />
                 )
             } else {
                 grpsFormattedInHTML[3] = (
@@ -120,19 +132,31 @@ class Home extends Component {
             }
         } else {
             grpsFormattedInHTML[0] = (
-                <AddIcon_location_1 cardLocation={0}/>
+                <AddIcon_location_1
+                    cardLocation={0}
+                    yAxis={10}
+                />
             );
 
             grpsFormattedInHTML[1] = (
-                <AddIcon_location_2 cardLocation={1}/>
+                <AddIcon_location_2
+                    cardLocation={1}
+                    yAxis={20}
+                />
             );
 
             grpsFormattedInHTML[2] = (
-                <AddIcon_location_3 cardLocation={2}/>
+                <AddIcon_location_3
+                    cardLocation={2}
+                    yAxis={30}
+                />
             );
 
             grpsFormattedInHTML[3] = (
-                <AddIcon_location_4 cardLocation={3}/>
+                <AddIcon_location_4
+                    cardLocation={3}
+                    yAxis={40}
+                />
             );
         }
 

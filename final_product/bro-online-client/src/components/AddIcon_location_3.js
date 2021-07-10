@@ -63,14 +63,15 @@ class AddIcon_location_3 extends Component {
 
     render() {
         const {
-            classes
+            classes,
+            yAxis
         } = this.props;
 
         return (
             <div
                 style={{
                     position: 'absolute',
-                    top:  `30` + 'em',
+                    top:  `${yAxis}` + 'em',
                     left: '100px',
                     width: '100px',
                     height: '100px'
