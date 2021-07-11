@@ -169,17 +169,53 @@ exports.addMemToGrp = (req, res) => {
         .set(newMember)
         .then(() => {
             db
-                .doc(`/groups/${docId}`)
+                .collection('users')
+                .doc(newMember.userName)
+                .collection('interests')
                 .get()
                 .then((data) => {
-                    let newInterest = data.data().name;
+                    let interests = [];
+
+                    data.forEach((doc) => {
+                        let schema = {
+                            name: doc.data().name,
+                            docId: doc.id,
+                            cardLocation: doc.data().cardLocation
+                        }
+
+                        interests.push(schema);
+                    });
+
+                    let updatedMyGrpArray = [];
+                    interests.sort(compare);
+
+                    for (let i=0; i<4; i++) {
+                        updatedMyGrpArray[i] = null;
+                        for (let j=0; j<interests.length; j++) {
+                            if (i === interests[j].cardLocation) {
+                                updatedMyGrpArray[i] = interests[j];
+                            }
+                        }
+                    }
+
+                    let indexOfNull = updatedMyGrpArray.indexOf(null);
+
                     db
-                        .doc(`users/${newMember.userName}/interests/${docId}`)
-                        .set({
-                            name: newInterest
-                        })
-                        .then(() => {
-                            res.json("SUCCESS");
+                        .doc(`/groups/${docId}`)
+                        .get()
+                        .then((data) => {
+                            let newInterest = data.data().name;
+                            db
+                                .doc(`users/${newMember.userName}/interests/${docId}`)
+                                .set({
+                                    cardLocation: indexOfNull,
+                                    name: newInterest
+                                })
+                                .then(() => {
+                                    return res.json("SUCCESS");
+                                }).catch((err) => {
+                                console.error(err);
+                            })
                         }).catch((err) => {
                         console.error(err);
                     })
