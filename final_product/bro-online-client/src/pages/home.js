@@ -7,8 +7,10 @@ import AddIcon_location_1 from "../components/AddIcon_location_1";
 import AddIcon_location_2 from "../components/AddIcon_location_2";
 import AddIcon_location_3 from "../components/AddIcon_location_3";
 import AddIcon_location_4 from "../components/AddIcon_location_4";
+import Profile from "../components/Profile";
 
 // MUI stuff
+import Grid from '@material-ui/core/Grid';
 import withStyles from '@material-ui/core/styles/withStyles';
 import GroupCard_1 from "../components/GroupCard_1";
 import GroupCard_2 from "../components/GroupCard_2";
@@ -51,8 +53,7 @@ class Home extends Component {
             user: {
                 authenticated,
                 credentials: { imageUrl },
-            },
-            classes
+            }
         } = this.props;
 
         if (!authenticated) {
@@ -169,14 +170,23 @@ class Home extends Component {
         }
 
         return (
-            <>
-                <Navbar imgUrl={imageUrl}/>
+            <Grid container spacing={16}>
+                <Grid item sm={8} xs={12}>
+                    <>
+                        <Navbar imgUrl={imageUrl}/>
 
-                <div className={classes.groupBackground}>
-                    <h1>{`My Groups`}</h1>
-                    {grpsFormattedInHTML.length !== 0 ? grpsFormattedInHTML : null}
-                </div>
-            </>
+                        <div>
+                            <h1>{`My Groups`}</h1>
+                            {grpsFormattedInHTML.length !== 0 ? grpsFormattedInHTML : null}
+                        </div>
+                    </>
+                </Grid>
+                <Grid item sm={4} xs={12}>
+                    <h1>
+                        <Profile />
+                    </h1>
+                </Grid>
+            </Grid>
         );
     }
 }
