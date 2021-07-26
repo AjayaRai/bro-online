@@ -27,7 +27,8 @@ class GroupMem extends Component {
         const {
             classes,
             name,
-            userName
+            userName,
+            imageUrl
         } = this.props;
 
         return (
@@ -35,7 +36,7 @@ class GroupMem extends Component {
                 <CardHeader title={name} />
                 <CardMedia
                     className={classes.media}
-                    image={`https://i.pinimg.com/736x/22/67/08/226708d840c705bdbe16603236f4ae62.jpg?alt=media`}
+                    image={imageUrl}
                     title={`profile img`}
                 />
                 <CardActions disbleSpacing>

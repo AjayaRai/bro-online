@@ -59,7 +59,7 @@ class Group extends Component {
         } = this.props;
 
         let groupMembers = (typeof this.state.groupMembers != 'undefined') ? (
-            this.state.groupMembers.map((groupMember) => <GroupMem name={groupMember.name} userName={groupMember.userName}/>)
+            this.state.groupMembers.map((groupMember) => <GroupMem name={groupMember.name} userName={groupMember.userName} imageUrl={groupMember.imageUrl}/>)
         ) : <p></p>;
 
         return (
