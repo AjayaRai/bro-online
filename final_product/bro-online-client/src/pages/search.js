@@ -37,7 +37,7 @@ class Group extends Component {
         let user = this.state.users ? (
             this.state.users.map(user =>
                 <div className={`inlineUsrDetail`}>
-                    <p><Avatar style={{float:"left"}} src={"https://firebasestorage.googleapis.com/v0/b/bro-online-test.appspot.com/o/jack.jpg?alt=media"} />{user.name} <AddBtn userName={user.userName} /></p>
+                    <p><Avatar style={{float:"left"}} src={user.imageUrl} />{user.name} <AddBtn userName={user.userName} /></p>
                 </div>
             )
         ) : <p></p>;

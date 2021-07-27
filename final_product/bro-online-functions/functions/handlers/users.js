@@ -78,7 +78,8 @@ exports.getUsers = (req, res) => {
             data.forEach((doc) => {
                 jsonSchema.push({
                     name: doc.data().namee,
-                    userName: doc.data().userName
+                    userName: doc.data().userName,
+                    imageUrl: doc.data().imageUrl
                 });
 
             })
