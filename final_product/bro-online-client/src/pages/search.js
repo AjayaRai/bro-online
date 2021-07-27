@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import './search.css';
 
 // Material UI stuff
+import withStyles from '@material-ui/core/styles/withStyles';
 import Avatar from "@material-ui/core/Avatar";
 
 const styles = (theme) => ({
