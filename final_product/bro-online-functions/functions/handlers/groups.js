@@ -259,13 +259,28 @@ exports.deleteGroup = (req, res) => {
             })
 
             batch.delete(db.doc(`/groups/${req.params.groupId}`));
+        })
+        .then(() => {
+            db
+                .collection('groups')
+                .doc(req.params.groupId)
+                .collection('messages')
+                .get()
+                .then((data_2) => {
+                    data_2.forEach((doc_2) => {
+                        batch.delete(db.doc(`/groups/${req.params.groupId}/messages/${doc_2.id}`))
+                    })
 
-            batch
-                .commit()
-                .then(() => {
-                    sleeep(5000)
+                    batch
+                        .commit()
                         .then(() => {
-                            res.json({message: "Deleted successfully the group " + req.params.groupId});
+                            sleeep(5000)
+                                .then(() => {
+                                    res.json({message: "Deleted successfully the group " + req.params.groupId});
+                                })
+                                .catch((err) => {
+                                    console.error(err);
+                                });
                         })
                         .catch((err) => {
                             console.error(err);
@@ -273,7 +288,7 @@ exports.deleteGroup = (req, res) => {
                 })
                 .catch((err) => {
                     console.error(err);
-                });
+                })
         })
         .catch((err) => {
             console.error(err);
