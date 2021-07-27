@@ -246,6 +246,18 @@ exports.removeMemFromGrp = (req, res) => {
 }
 
 exports.deleteGroup = (req, res) => {
+    // Below code removes the user from the Group and creates an illusion of the Group being deleted. We need this because real deletion takes long time
+    db
+        .collection('groups')
+        .doc(req.params.groupId)
+        .collection('groupMembers')
+        .doc(req.user.userName)
+        .delete()
+        .catch((err) => {
+            console.error(err);
+        })
+
+
     const batch = db.batch();
 
     db
@@ -274,13 +286,7 @@ exports.deleteGroup = (req, res) => {
                     batch
                         .commit()
                         .then(() => {
-                            sleeep(5000)
-                                .then(() => {
-                                    res.json({message: "Deleted successfully the group " + req.params.groupId});
-                                })
-                                .catch((err) => {
-                                    console.error(err);
-                                });
+                                res.json({message: "Deleted successfully the group " + req.params.groupId});
                         })
                         .catch((err) => {
                             console.error(err);
